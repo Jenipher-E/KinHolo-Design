@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 (Shopping Lists) — data model.
+/* KinHolo · Feature 3 (Shopping Lists) — data model.
    The Vogel family, Berlin — built from the PRD3 narrative (Jeni & Fabian).
    Every item is a structured record (PRD §2.4: "Item is the unit of truth"). */
 

@@ -1,6 +1,6 @@
-# OmniKin Website
+# KinHolo Website
 
-Marketing site prototype for OmniKin, the privacy-first family organiser. Static HTML, CSS and vanilla JavaScript. No build step, no dependencies beyond Google Fonts.
+Marketing site prototype for KinHolo, the privacy-first family organiser. Static HTML, CSS and vanilla JavaScript. No build step, no dependencies beyond Google Fonts.
 
 ## Run it
 
@@ -24,7 +24,7 @@ python3 -m http.server 8000
 
 ## Shared files
 
-- `site.css` — all styling. Design tokens (teal / coral / blue / green palette, type scale, spacing) live in `:root` at the top and come from the OmniKin Style Guide v1.0.
+- `site.css` — all styling. Design tokens (teal / coral / blue / green palette, type scale, spacing) live in `:root` at the top and come from the KinHolo Style Guide v1.0.
 - `site.js` — shared shell. Injects the header and footer into `[data-head]` / `[data-foot]`, renders the inline icon set, runs scroll reveal, drives the phone demos and handles the prototype forms.
 - `demos.js` — the in-phone screen mockups (`window.OK_DEMOS`). A page opts in with `data-demo data-screens="lists,tasks,money"`.
 - `image-slot.js` — drag-and-drop image placeholder web component, used where real photography is still missing.

@@ -1,4 +1,4 @@
-/* OmniKin · Full journey — shared core.
+/* KinHolo · Full journey — shared core.
    Builds the merged screen registry, the master "jump to a flow" chapter list,
    the ordered "user journey flow", and the gallery grouping — all consumed by
    both the interactive prototype (omni-full-journey.jsx) and the all-screens
@@ -239,7 +239,7 @@ const f4steps = [
 ];
 const JOURNEY = [
   { group: 'Onboarding' },
-  { label: 'First open of OmniKin',       sub: 'The welcome screen',              stack: [['core', 'welcomeB']] },
+  { label: 'First open of KinHolo',       sub: 'The welcome screen',              stack: [['core', 'welcomeB']] },
   { label: 'Creates the household',       sub: 'Email and a strong password',     stack: [['core', 'welcomeB'], ['core', 'euSignup']] },
   { label: 'Sets up her profile',         sub: 'Display name and colour',         stack: [['core', 'welcomeB'], ['core', 'euSignup'], ['core', 'euDisplayName']] },
   { label: 'Verifies her email',          sub: 'A 6-digit code',                  stack: [['core', 'welcomeB'], ['core', 'euSignup'], ['core', 'euDisplayName'], ['core', 'euVerify']] },

@@ -1,5 +1,5 @@
-/* OmniKin · shared kit: themes, icons, device frame, primitives.
-   Tokens lifted verbatim from OmniKin Style Guide v1.0. */
+/* KinHolo · shared kit: themes, icons, device frame, primitives.
+   Tokens lifted verbatim from KinHolo Style Guide v1.0. */
 
 const OK_FONT = 'var(--ok-font, Inter, "Segoe UI", Roboto, system-ui, Arial, sans-serif)';
 const OK_MONO = '"Roboto Mono", ui-monospace, "SF Mono", Menlo, monospace';
@@ -275,7 +275,7 @@ function LogoMark({ t, size = 56, light }) {
   const ring = light ? 'rgba(255,255,255,.5)' : t.teal300;
   const fg = light ? '#fff' : t.teal700;
   return (
-    <div title="Replace with OmniKin logo" style={{ width: size, height: size, borderRadius: size * 0.28, position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', background: light ? 'rgba(255,255,255,.12)' : t.panelTeal, boxShadow: `inset 0 0 0 1.5px ${ring}`, overflow: 'hidden' }}>
+    <div title="Replace with KinHolo logo" style={{ width: size, height: size, borderRadius: size * 0.28, position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center', background: light ? 'rgba(255,255,255,.12)' : t.panelTeal, boxShadow: `inset 0 0 0 1.5px ${ring}`, overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: 0, backgroundImage: `repeating-linear-gradient(135deg, ${light ? 'rgba(255,255,255,.10)' : 'rgba(28,110,120,.10)'} 0 6px, transparent 6px 12px)` }} />
       <span style={{ fontFamily: OK_MONO, fontSize: size * 0.17, color: fg, letterSpacing: .5, zIndex: 1, fontWeight: 500 }}>logo</span>
     </div>

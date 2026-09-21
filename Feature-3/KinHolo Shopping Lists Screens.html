@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>OmniKin · Tasks · All Screens</title>
+<title>KinHolo · Shopping Lists · All Screens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -16,6 +16,8 @@
   @keyframes okfade { from { opacity: 0; } to { opacity: 1; } }
   @keyframes okpop { 0% { transform: scale(.7); opacity: 0; } 60% { transform: scale(1.06); } 100% { transform: scale(1); opacity: 1; } }
   @keyframes okblink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
+  @keyframes okpulse { 0% { box-shadow: 0 0 0 0 rgba(42,140,153,.35); } 70% { box-shadow: 0 0 0 20px rgba(42,140,153,0); } 100% { box-shadow: 0 0 0 0 rgba(42,140,153,0); } }
+  @keyframes okscan { 0%,100% { transform: translateY(-78px); } 50% { transform: translateY(78px); } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 </style>
 </head>
@@ -26,13 +28,14 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <script type="text/babel" src="design-canvas.jsx"></script>
 <script type="text/babel" src="omni-kit.jsx"></script>
-<script type="text/babel" src="f4-data.jsx"></script>
-<script type="text/babel" src="f4-kit.jsx"></script>
-<script type="text/babel" src="f4-shells.jsx"></script>
-<script type="text/babel" src="f4-screens-core.jsx"></script>
-<script type="text/babel" src="f4-screens-fair.jsx"></script>
-<script type="text/babel" src="f4-screens-parked.jsx"></script>
-<script type="text/babel" src="f4-registry.jsx"></script>
-<script type="text/babel" src="f4-gallery.jsx"></script>
+<script type="text/babel" src="f3-data.jsx"></script>
+<script type="text/babel" src="f3-kit.jsx"></script>
+<script type="text/babel" src="f3-shells.jsx"></script>
+<script type="text/babel" src="f3-screens-items.jsx"></script>
+<script type="text/babel" src="f3-screens-oos.jsx"></script>
+<script type="text/babel" src="f3-screens-capture.jsx"></script>
+<script type="text/babel" src="f3-screens-parked.jsx"></script>
+<script type="text/babel" src="f3-registry.jsx"></script>
+<script type="text/babel" src="f3-gallery.jsx"></script>
 </body>
 </html>

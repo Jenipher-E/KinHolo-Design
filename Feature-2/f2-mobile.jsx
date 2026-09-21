@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — interactive prototype runner. Fills the device viewport. */
+/* KinHolo · Feature 2 — interactive prototype runner. Fills the device viewport. */
 const { OK_THEMES, OK_FONT, OK_MONO, I, F2_SCREENS, F2_BACK, F2_START } = window;
 
 function detectPlatform() {
@@ -86,7 +86,7 @@ function Runner() {
             <Seg t={t} value={theme} onChange={setTheme} options={[{ v: 'light', label: 'Light' }, { v: 'dark', label: 'Dark' }]} />
             <div style={{ height: 18 }} />
             <button onClick={restart} style={{ width: '100%', height: 48, borderRadius: 13, border: 'none', background: t.panelTeal, color: t.teal800, fontFamily: OK_FONT, fontSize: 15, fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>{Ic.reset(t.teal800)} Restart this version</button>
-            <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.muted, textAlign: 'center', marginTop: 14, lineHeight: 1.5 }}>OmniKin · Household Access (Feature 2)<br/>Tap the screen’s own buttons to move through the flow.</div>
+            <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.muted, textAlign: 'center', marginTop: 14, lineHeight: 1.5 }}>KinHolo · Household Access (Feature 2)<br/>Tap the screen’s own buttons to move through the flow.</div>
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — version shells.
+/* KinHolo · Feature 4 (Tasks) — version shells.
    Version A (Calm): Tasks opened from Home/Tasks card · single day-grouped stream · compact rows · calm fair-load card · sheets.
    Version B (Bold): own bottom-tab hub · bold header carrying a live fair-load summary · airy cards grouped by assignee. */
 const {

@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 (Budgets & Expenses) — UI atoms. Consumes kit/omni-kit.jsx globals.
+/* KinHolo · Feature 17 (Budgets & Expenses) — UI atoms. Consumes kit/omni-kit.jsx globals.
    Calm-and-bold, brand tokens only. Category colour is the connective tissue across
    every surface; the visibility chip travels with every record. */
 const { OK_FONT, OK_MONO, I, memberBy, catBy, cadenceBy, F17_SCOPES, eur, remaining, pct } = window;

@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 — Epic 17.1 core screens: create budgets by cadence, log dated
+/* KinHolo · Feature 17 — Epic 17.1 core screens: create budgets by cadence, log dated
    expenses, category pots, recurrence, edit / close, offline capture, currency integrity. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn, Field,

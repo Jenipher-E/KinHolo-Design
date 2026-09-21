@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — UI atoms. Consumes kit/omni-kit.jsx globals.
+/* KinHolo · Feature 4 (Tasks) — UI atoms. Consumes kit/omni-kit.jsx globals.
    Calm-and-bold, brand-token only. Two densities: compact (A) / airy (B).
    Assignee colour is the connective tissue across every surface (PRD: colour-coded by assignee). */
 const { OK_FONT, OK_MONO, I, memberBy, listBy, F4_PRIORITY } = window;

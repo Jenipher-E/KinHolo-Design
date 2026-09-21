@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — PARKED: US-3.3.1 (Meal Planner push) + Flow B.
+/* KinHolo · Feature 3 — PARKED: US-3.3.1 (Meal Planner push) + Flow B.
    Built as real screens but clearly separated as "Not in this release". */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn, Banner,

@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — US-4.2.2 surfaces (agenda / calendar / timetable).
+/* KinHolo · Feature 4 (Tasks) — US-4.2.2 surfaces (agenda / calendar / timetable).
    NOT in this release: these depend on Feature 9 (Agenda), Feature 5 (Calendar) and
    Feature 10 (Timetable). Designed here, separated from the shipping flow. */
 const {

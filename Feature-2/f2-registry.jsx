@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — screen registry, back-map, gallery grouping. */
+/* KinHolo · Feature 2 — screen registry, back-map, gallery grouping. */
 const W = window;
 
 const F2_SCREENS = {

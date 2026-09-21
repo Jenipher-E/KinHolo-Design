@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — shared item & list-management screens (Epic 3.1).
+/* KinHolo · Feature 3 — shared item & list-management screens (Epic 3.1).
    Add item, item detail, create/share list, categories, staples, archive, per-list settings. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn, Field, Banner,

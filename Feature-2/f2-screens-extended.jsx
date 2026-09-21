@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — Epic 2.3: extended family & co-parenting (differentiated). */
+/* KinHolo · Feature 2 — Epic 2.3: extended family & co-parenting (differentiated). */
 const {
   OK_FONT, OK_MONO, I, Screen, FlowHeader, Btn, Banner,
   Pad, H1, Lead, Spacer, Grow, Link, Kicker,
@@ -12,7 +12,7 @@ function Diff({ t, children }) {
     <div style={{ display: 'flex', gap: 9, alignItems: 'flex-start', background: t.panelGreen, borderRadius: 12, padding: '12px 13px', borderLeft: `3px solid ${t.green}` }}>
       <span style={{ fontFamily: OK_FONT, fontSize: 13, fontWeight: 800, color: t.green, flex: '0 0 auto' }}>★</span>
       <div style={{ flex: 1 }}>
-        <div style={{ fontFamily: OK_MONO, fontSize: 10, fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', color: t.green, marginBottom: 3 }}>Only on OmniKin</div>
+        <div style={{ fontFamily: OK_MONO, fontSize: 10, fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', color: t.green, marginBottom: 3 }}>Only on KinHolo</div>
         <div style={{ fontFamily: OK_FONT, fontSize: 12.5, color: t.slate, lineHeight: 1.5 }}>{children}</div>
       </div>
     </div>
@@ -47,7 +47,7 @@ function ExtendedRoles({ t, platform, go, back }) {
           ))}
         </div>
 
-        <Diff t={t}>Cozi and FamilyWall assume one nuclear family on one account. OmniKin models grandparents, relatives and carers natively, the shape that’s common everywhere and the norm across much of Africa.</Diff>
+        <Diff t={t}>Cozi and FamilyWall assume one nuclear family on one account. KinHolo models grandparents, relatives and carers natively, the shape that’s common everywhere and the norm across much of Africa.</Diff>
         <Spacer h={14} />
         <Card t={t} pad={14} style={{ display: 'flex', alignItems: 'center', gap: 11 }}>
           {I.home(t.teal700, 20)}

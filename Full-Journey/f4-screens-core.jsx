@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — core task screens (Epic 4.1 + child ack 4.2.3).
+/* KinHolo · Feature 4 (Tasks) — core task screens (Epic 4.1 + child ack 4.2.3).
    Create · recurrence · assign · this-vs-future edit · detail w/ subtasks+attachments · complete/reopen · child acknowledgement. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn,

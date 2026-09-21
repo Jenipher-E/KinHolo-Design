@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — static all-screens gallery on the design canvas. */
+/* KinHolo · Feature 4 (Tasks) — static all-screens gallery on the design canvas. */
 const { F4_SCREENS, F4_GALLERY, OK_THEMES, OK_FONT, OK_MONO, DeviceFrame } = window;
 
 function GToggle({ options, value, onChange }) {
@@ -23,7 +23,7 @@ function ControlBar({ platform, setPlatform, theme, setTheme }) {
       <GToggle value={platform} onChange={setPlatform} options={[{ v: 'ios', label: 'iOS' }, { v: 'android', label: 'Android' }]} />
       <GToggle value={theme} onChange={setTheme} options={[{ v: 'light', label: 'Light' }, { v: 'dark', label: 'Dark' }]} />
       <div style={{ width: 1, height: 24, background: 'rgba(14,58,64,.12)' }} />
-      <a href="OmniKin Tasks Prototype.html" style={{ textDecoration: 'none', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff', background: '#E2683C', borderRadius: 9, padding: '8px 14px' }}>Open prototype →</a>
+      <a href="KinHolo Tasks Prototype.html" style={{ textDecoration: 'none', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff', background: '#E2683C', borderRadius: 9, padding: '8px 14px' }}>Open prototype →</a>
     </div>
   );
 }

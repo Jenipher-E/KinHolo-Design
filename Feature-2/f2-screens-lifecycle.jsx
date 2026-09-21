@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — ownership, removal & audit (shared). */
+/* KinHolo · Feature 2 — ownership, removal & audit (shared). */
 const {
   OK_FONT, OK_MONO, I, Screen, FlowHeader, Btn, Banner,
   Pad, H1, Lead, Spacer, Grow, Link, Kicker,

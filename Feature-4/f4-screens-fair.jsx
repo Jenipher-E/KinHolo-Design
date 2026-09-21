@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — fairness (Epic 4.3, differentiator) + reminders (4.2.1) + offline.
+/* KinHolo · Feature 4 (Tasks) — fairness (Epic 4.3, differentiator) + reminders (4.2.1) + offline.
    Private, non-judgemental fair-load view · opt-in human-confirmed rebalancing · calm digest reminders. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn,

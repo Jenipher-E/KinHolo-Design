@@ -3,8 +3,8 @@
 Task capture and assignment, mental-load fairness, reminders and offline behaviour.
 
 ## Entry points
-- `OmniKin Tasks Prototype.html` clickable prototype in a phone frame
-- `OmniKin Tasks Screens.html` every screen laid out on one canvas
+- `KinHolo Tasks Prototype.html` clickable prototype in a phone frame
+- `KinHolo Tasks Screens.html` every screen laid out on one canvas
 
 ## Design sections
 Version A calm, Version B bold, first-arrival empty states, create, assign and detail, mental-load fairness (the differentiator), reminders and offline, plus screens parked until Agenda, Calendar and Timetable ship.
@@ -23,6 +23,6 @@ Every file in this folder is flat and self-contained. Open the HTML files direct
 - `*-registry.jsx` the single list of screens and gallery sections that both HTML entry points read
 - `*-app.jsx` the clickable prototype (phone frame, flow navigation)
 - `*-gallery.jsx` the all-screens canvas view
-- `omni-kit.jsx` shared OmniKin design kit (tokens, type, buttons, fields)
+- `omni-kit.jsx` shared KinHolo design kit (tokens, type, buttons, fields)
 - `design-canvas.jsx` pan and zoom canvas used by the screens gallery
 

@@ -3,17 +3,19 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>OmniKin · All Screens</title>
+<title>KinHolo · Tasks · All Screens</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
   html, body { margin: 0; padding: 0; height: 100%; background: #f0eee9; }
   #root { height: 100%; }
   input, button { font-family: inherit; }
+  @keyframes oksheet { from { transform: translateY(14px); } to { transform: none; } }
+  @keyframes okfade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes okpop { 0% { transform: scale(.7); opacity: 0; } 60% { transform: scale(1.06); } 100% { transform: scale(1); opacity: 1; } }
   @keyframes okblink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
-  @keyframes okpulse { 0% { box-shadow: 0 0 0 0 rgba(42,140,153,.35); } 70% { box-shadow: 0 0 0 22px rgba(42,140,153,0); } 100% { box-shadow: 0 0 0 0 rgba(42,140,153,0); } }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
 </style>
 </head>
@@ -24,7 +26,13 @@
 <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
 <script type="text/babel" src="design-canvas.jsx"></script>
 <script type="text/babel" src="omni-kit.jsx"></script>
-<script type="text/babel" src="omni-screens.jsx"></script>
-<script type="text/babel" src="omni-gallery.jsx"></script>
+<script type="text/babel" src="f4-data.jsx"></script>
+<script type="text/babel" src="f4-kit.jsx"></script>
+<script type="text/babel" src="f4-shells.jsx"></script>
+<script type="text/babel" src="f4-screens-core.jsx"></script>
+<script type="text/babel" src="f4-screens-fair.jsx"></script>
+<script type="text/babel" src="f4-screens-parked.jsx"></script>
+<script type="text/babel" src="f4-registry.jsx"></script>
+<script type="text/babel" src="f4-gallery.jsx"></script>
 </body>
 </html>

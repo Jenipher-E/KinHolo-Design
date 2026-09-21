@@ -1,4 +1,4 @@
-/* OmniKin · Full journey — per-feature window namespace capture.
+/* KinHolo · Full journey — per-feature window namespace capture.
    --------------------------------------------------------------
    Features 2, 3 and 4 each (re)define globals with the SAME names on window:
    HomeA, HomeB, Offline, Sheet, and a whole kit of helpers (Pad, Card, Avatar,

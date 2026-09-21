@@ -1,6 +1,6 @@
 # Feature 17 · Budgets & Expenses
 
-Household budgeting and shared expense tracking for OmniKin: budgets at daily, weekly, monthly and yearly cadences, categorised and dated expenses, per-record visibility, and a private overspend heads-up drawn only from the household's own history.
+Household budgeting and shared expense tracking for KinHolo: budgets at daily, weekly, monthly and yearly cadences, categorised and dated expenses, per-record visibility, and a private overspend heads-up drawn only from the household's own history.
 
 Built from `PRD17_Feature_Budgets_Expenses.docx` (v1.0, September 2026) and styled on the Feature 1 palette and style guide.
 
@@ -8,8 +8,8 @@ Built from `PRD17_Feature_Budgets_Expenses.docx` (v1.0, September 2026) and styl
 
 | File | What it is |
 | --- | --- |
-| `OmniKin Budgets Prototype.html` | Clickable prototype. Side panel switches Version A / B, iOS / Android, light / dark, and offers both a flow jump list and the ordered user journey. |
-| `OmniKin Budgets Screens.html` | Every screen laid out on one pannable canvas, grouped by epic. |
+| `KinHolo Budgets Prototype.html` | Clickable prototype. Side panel switches Version A / B, iOS / Android, light / dark, and offers both a flow jump list and the ordered user journey. |
+| `KinHolo Budgets Screens.html` | Every screen laid out on one pannable canvas, grouped by epic. |
 
 No build step. Open either file in a browser; React and Babel load from unpkg and every script path points at a sibling file in this folder.
 
@@ -41,5 +41,5 @@ Both start on the landing homepage you reach after login, where **Budgets & expe
 | `f17-registry.jsx` | Screen registry, version entry points, gallery grouping. |
 | `f17-app.jsx` | Prototype shell: device frame, version and platform controls, flow list, user journey. |
 | `f17-gallery.jsx` | All-screens canvas. |
-| `omni-kit.jsx` | Shared OmniKin kit: themes, icons, device frame, primitives. Copied in so this folder stands alone. |
+| `omni-kit.jsx` | Shared KinHolo kit: themes, icons, device frame, primitives. Copied in so this folder stands alone. |
 | `design-canvas.jsx` | Canvas used by the all-screens page. |

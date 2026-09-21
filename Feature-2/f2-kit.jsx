@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — shared management UI atoms. Consumes kit/omni-kit.jsx globals. */
+/* KinHolo · Feature 2 — shared management UI atoms. Consumes kit/omni-kit.jsx globals. */
 const { OK_FONT, OK_MONO, I } = window;
 
 /* ───────── layout atoms (mirror Feature 1 screen helpers) ───────── */

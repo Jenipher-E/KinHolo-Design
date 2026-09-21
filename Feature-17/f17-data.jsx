@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 (Budgets & Expenses) — data model.
+/* KinHolo · Feature 17 (Budgets & Expenses) — data model.
    The Vogel family, Berlin (continued from Features 3 and 4). Default currency EUR
    (set in Settings, Feature 13). Every budget and expense carries a date and a
    visibility scope (PRD §2.4 invariants). Numbers are internally consistent:

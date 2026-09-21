@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — membership lifecycle flows (shared by both versions). */
+/* KinHolo · Feature 2 — membership lifecycle flows (shared by both versions). */
 const {
   OK_FONT, OK_MONO, I, Screen, FlowHeader, Btn, Field, Banner,
   Pad, H1, Lead, Spacer, Grow, Link, Kicker,
@@ -117,7 +117,7 @@ function InviteLink({ t, platform, go, back }) {
         </div>
         <Grow />
         <Card t={t} pad={12} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span style={{ flex: 1, fontFamily: OK_MONO, fontSize: 13, color: t.slate, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>omnikin.app/join/8FK2-9Q7X</span>
+          <span style={{ flex: 1, fontFamily: OK_MONO, fontSize: 13, color: t.slate, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>kinholo.com/join/8FK2-9Q7X</span>
           <button style={{ border: 'none', background: t.panelTeal, color: t.teal800, fontFamily: OK_FONT, fontSize: 13, fontWeight: 700, borderRadius: 9, padding: '8px 12px', cursor: 'pointer' }}>Copy</button>
         </Card>
         <Spacer h={12} />
@@ -188,7 +188,7 @@ function AcceptJoin({ t, platform, go, back }) {
         </div>
         <Grow />
         <Btn t={t} kind="primary" onClick={() => go('home')} style={{ boxShadow: '0 8px 22px rgba(0,0,0,.25)' }}>Create account & join</Btn>
-        <div style={{ textAlign: 'center', fontFamily: OK_FONT, fontSize: 13.5, color: 'rgba(255,255,255,.8)', marginTop: 12 }}>Already have OmniKin? <span onClick={() => go('home')} style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline', textUnderlineOffset: 3, cursor: 'pointer' }}>Sign in to join</span></div>
+        <div style={{ textAlign: 'center', fontFamily: OK_FONT, fontSize: 13.5, color: 'rgba(255,255,255,.8)', marginTop: 12 }}>Already have KinHolo? <span onClick={() => go('home')} style={{ color: '#fff', fontWeight: 700, textDecoration: 'underline', textUnderlineOffset: 3, cursor: 'pointer' }}>Sign in to join</span></div>
         <Spacer h={16} />
       </Pad>
     </Screen>

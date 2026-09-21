@@ -3,8 +3,8 @@
 Shared lists, fast capture, the out-of-stock loop, offline shopping and access levels.
 
 ## Entry points
-- `OmniKin Shopping Lists Prototype.html` clickable prototype in a phone frame
-- `OmniKin Shopping Lists Screens.html` every screen laid out on one canvas
+- `KinHolo Shopping Lists Prototype.html` clickable prototype in a phone frame
+- `KinHolo Shopping Lists Screens.html` every screen laid out on one canvas
 
 ## Design sections
 First-arrival empty states, Version A calm, Version B bold, the out-of-stock loop (the differentiator), fast capture by voice and barcode, lists and structure, offline and access, plus screens parked until the Meal Planner ships.
@@ -23,6 +23,6 @@ Every file in this folder is flat and self-contained. Open the HTML files direct
 - `*-registry.jsx` the single list of screens and gallery sections that both HTML entry points read
 - `*-app.jsx` the clickable prototype (phone frame, flow navigation)
 - `*-gallery.jsx` the all-screens canvas view
-- `omni-kit.jsx` shared OmniKin design kit (tokens, type, buttons, fields)
+- `omni-kit.jsx` shared KinHolo design kit (tokens, type, buttons, fields)
 - `design-canvas.jsx` pan and zoom canvas used by the screens gallery
 

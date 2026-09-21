@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — Epic 3.3.2 / 3.3.3: voice & barcode capture, offline, sync.
+/* KinHolo · Feature 3 — Epic 3.3.2 / 3.3.3: voice & barcode capture, offline, sync.
    Plus the view-only (read-only) member state from US-3.1.3. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn, Banner,
@@ -24,7 +24,7 @@ function VoiceCapture({ t, platform, go, back }) {
       <div style={{ flex: 1, overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
         <FlowTop t={t} back={back} sub="Groceries" title="Add by voice" />
         <Pad style={{ paddingTop: 8 }}>
-          <Lead t={t} style={{ marginTop: -4 }}>Say what you need in plain words. OmniKin fills in the amount and shop.</Lead>
+          <Lead t={t} style={{ marginTop: -4 }}>Say what you need in plain words. KinHolo fills in the amount and shop.</Lead>
         </Pad>
         <Spacer h={20} />
         {/* listening visual */}

@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 — Epic 17.2: per-record visibility, role-based access,
+/* KinHolo · Feature 17 — Epic 17.2: per-record visibility, role-based access,
    the scoped Teen exception, proof that a hidden pot is truly invisible, and the
    household privacy boundary. */
 const {
@@ -262,7 +262,7 @@ function Privacy({ t, platform, go, back }) {
               [MI.people, 'Inside the household only', 'Every figure is scoped to the members its owner chose. Nothing is shared outside.'],
               [MI.receipt, 'Receipts follow the record', 'An attachment inherits its expense visibility and is never shared without a deliberate action.'],
               [MI.trend, 'Flags run on your own history', 'Pacing comparisons use only your past periods. No external data, no bank connection.'],
-              [I.globe, 'Held under your region’s rules', 'Financial data follows the same residency and compliance handling as the rest of OmniKin.'],
+              [I.globe, 'Held under your region’s rules', 'Financial data follows the same residency and compliance handling as the rest of KinHolo.'],
             ].map(([icon, title, body]) => (
               <Card key={title} t={t} pad={14} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
                 <div style={{ width: 34, height: 34, borderRadius: 10, background: t.surfaceAlt, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto' }}>{icon(t.teal700, 18)}</div>
@@ -275,7 +275,7 @@ function Privacy({ t, platform, go, back }) {
           </div>
           <Spacer h={16} />
           <Card t={t} pad={14} style={{ background: t.surfaceAlt, border: 'none' }}>
-            <div style={{ fontFamily: OK_FONT, fontSize: 13, color: t.slate, lineHeight: 1.55 }}>OmniKin records and monitors money. It never moves it, and it does not connect to bank accounts.</div>
+            <div style={{ fontFamily: OK_FONT, fontSize: 13, color: t.slate, lineHeight: 1.55 }}>KinHolo records and monitors money. It never moves it, and it does not connect to bank accounts.</div>
           </Card>
           <Spacer h={22} />
         </Pad>

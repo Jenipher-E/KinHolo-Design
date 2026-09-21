@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — interactive prototype shell: device frame + side controls. */
+/* KinHolo · Feature 4 (Tasks) — interactive prototype shell: device frame + side controls. */
 const { F4_SCREENS, F4_START, OK_THEMES, OK_FONT, OK_MONO, DeviceFrame } = window;
 
 const F4_FLOWS = [
@@ -132,7 +132,7 @@ function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 34, height: 34, borderRadius: 10, background: t.teal700, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: OK_MONO, fontSize: 11, color: '#fff' }}>OK</div>
             <div>
-              <div style={{ fontFamily: OK_FONT, fontSize: 16, fontWeight: 700, color: t.title, letterSpacing: -0.2 }}>OmniKin</div>
+              <div style={{ fontFamily: OK_FONT, fontSize: 16, fontWeight: 700, color: t.title, letterSpacing: -0.2 }}>KinHolo</div>
               <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.muted }}>Tasks · prototype</div>
             </div>
           </div>
@@ -207,7 +207,7 @@ function App() {
         <div style={{ flex: 1, minHeight: 14 }} />
         <div style={{ padding: '16px 22px 22px', display: 'flex', flexDirection: 'column', gap: 9, borderTop: `1px solid ${t.hairline}` }}>
           <button onClick={restart} style={{ border: `1.5px solid ${t.hairline}`, background: 'transparent', borderRadius: 10, padding: '10px', cursor: 'pointer', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: t.slate }}>↺ Restart this version</button>
-          <a href="OmniKin Tasks Screens.html" style={{ textDecoration: 'none', textAlign: 'center', background: t.teal700, borderRadius: 10, padding: '11px', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff' }}>View all screens →</a>
+          <a href="KinHolo Tasks Screens.html" style={{ textDecoration: 'none', textAlign: 'center', background: t.teal700, borderRadius: 10, padding: '11px', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff' }}>View all screens →</a>
           <div style={{ fontFamily: OK_FONT, fontSize: 10.5, color: t.muted, lineHeight: 1.5, marginTop: 2 }}>Tap the screen’s own buttons to move through the flow. Use ← to step back.</div>
         </div>
       </div>

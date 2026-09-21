@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks) — screen registry, version starts, gallery grouping. */
+/* KinHolo · Feature 4 (Tasks) — screen registry, version starts, gallery grouping. */
 const W = window;
 
 const F4_SCREENS = {

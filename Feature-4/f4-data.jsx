@@ -1,4 +1,4 @@
-/* OmniKin · Feature 4 (Tasks — Shared To-Dos & Chores) — data model.
+/* KinHolo · Feature 4 (Tasks — Shared To-Dos & Chores) — data model.
    The Vogel family, Berlin (continued from Feature 3). Five members so the
    fair-load story has 2+ adults, a teen and a child (PRD §1.4 narrative).
    Every task is a structured record: title, list, due, priority, assignees,

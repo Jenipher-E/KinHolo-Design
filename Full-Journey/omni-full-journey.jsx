@@ -1,4 +1,4 @@
-/* OmniKin · Full journey — interactive prototype.
+/* KinHolo · Full journey — interactive prototype.
    One continuous prototype across Features 1-4 with a Version A/B switch, a
    "Jump to a flow" chapter index and an ordered "User journey flow". */
 const { OK_THEMES, OK_FONT, OK_MONO, DeviceFrame } = window;
@@ -118,7 +118,7 @@ function App() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <div style={{ width: 34, height: 34, borderRadius: 10, background: t.teal700, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{window.SpectrumMark ? <window.SpectrumMark ctx="dark" size={22} /> : <span style={{ fontFamily: OK_MONO, fontSize: 11, color: '#fff' }}>OK</span>}</div>
             <div>
-              <div style={{ fontFamily: OK_FONT, fontSize: 16, fontWeight: 700, color: t.title, letterSpacing: -0.2 }}>OmniKin</div>
+              <div style={{ fontFamily: OK_FONT, fontSize: 16, fontWeight: 700, color: t.title, letterSpacing: -0.2 }}>KinHolo</div>
               <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.muted }}>Full journey · Features 1–4</div>
             </div>
           </div>
@@ -156,7 +156,7 @@ function App() {
             </div>
           ) : (
             <div>
-              <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.slate, lineHeight: 1.5, marginBottom: 11 }}>Follow one Owner, from her first open of OmniKin all the way through household setup, shopping and tasks, in order.</div>
+              <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.slate, lineHeight: 1.5, marginBottom: 11 }}>Follow one Owner, from her first open of KinHolo all the way through household setup, shopping and tasks, in order.</div>
               <button onClick={() => goJourney(0)} style={{ width: '100%', border: 'none', borderRadius: 10, padding: '11px', cursor: 'pointer', background: t.coral, color: '#fff', fontFamily: OK_FONT, fontSize: 13, fontWeight: 700, marginBottom: 16, boxShadow: '0 6px 16px rgba(226,104,60,.32)' }}>Start the journey</button>
               <div style={{ display: 'flex', flexDirection: 'column' }}>
                 {(() => { let n = -1; return JOURNEY.map((s, i) => {
@@ -188,7 +188,7 @@ function App() {
         <div style={{ flex: 1, minHeight: 12 }} />
         <div style={{ padding: '14px 22px 22px', display: 'flex', flexDirection: 'column', gap: 9, borderTop: `1px solid ${t.hairline}` }}>
           <button onClick={restart} style={{ border: `1.5px solid ${t.hairline}`, background: 'transparent', borderRadius: 10, padding: '10px', cursor: 'pointer', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: t.slate }}>↺ Restart from welcome</button>
-          <a href="OmniKin Full Journey Screens.html" style={{ textDecoration: 'none', textAlign: 'center', background: t.teal700, borderRadius: 10, padding: '11px', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff' }}>View all screens →</a>
+          <a href="KinHolo Full Journey Screens.html" style={{ textDecoration: 'none', textAlign: 'center', background: t.teal700, borderRadius: 10, padding: '11px', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff' }}>View all screens →</a>
           <div style={{ fontFamily: OK_FONT, fontSize: 10.5, color: t.muted, lineHeight: 1.5, marginTop: 2 }}>Tap the screen’s own buttons to move through a flow. Use ← to step back.</div>
         </div>
       </div>

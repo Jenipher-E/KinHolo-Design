@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — version shells (A: Settings-based · B: Home-based), hubs, registry. */
+/* KinHolo · Feature 2 — version shells (A: Settings-based · B: Home-based), hubs, registry. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn, Banner,
   Pad, H1, Lead, Spacer, Grow, Link, Kicker,

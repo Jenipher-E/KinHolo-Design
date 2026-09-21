@@ -1,4 +1,4 @@
-/* OmniKin · Full journey — static all-screens gallery across Features 1-4.
+/* KinHolo · Full journey — static all-screens gallery across Features 1-4.
    Reuses every feature's own screens and gallery grouping verbatim. Each screen
    is rendered with its owning feature's globals active (so the right HomeA /
    Offline / kit resolves), captured per artboard via window.__okWith. */
@@ -39,7 +39,7 @@ function ControlBar({ platform, setPlatform, theme, setTheme, ver, setVer }) {
       <GToggle value={platform} onChange={setPlatform} options={[{ v: 'ios', label: 'iOS' }, { v: 'android', label: 'Android' }]} />
       <GToggle value={theme} onChange={setTheme} options={[{ v: 'light', label: 'Light' }, { v: 'dark', label: 'Dark' }]} />
       <div style={{ width: 1, height: 24, background: 'rgba(14,58,64,.12)' }} />
-      <a href="OmniKin Full Journey.html" style={{ textDecoration: 'none', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff', background: '#E2683C', borderRadius: 9, padding: '8px 14px' }}>Open prototype →</a>
+      <a href="KinHolo Full Journey.html" style={{ textDecoration: 'none', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff', background: '#E2683C', borderRadius: 9, padding: '8px 14px' }}>Open prototype →</a>
     </div>
   );
 }

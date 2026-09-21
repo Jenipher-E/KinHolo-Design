@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 — member detail & role assignment (shared). */
+/* KinHolo · Feature 2 — member detail & role assignment (shared). */
 const {
   OK_FONT, OK_MONO, I, Screen, FlowHeader, Btn, Banner,
   Pad, H1, Lead, Spacer, Grow, Link, Kicker,

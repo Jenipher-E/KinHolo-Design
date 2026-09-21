@@ -1,4 +1,4 @@
-OmniKin
+KinHolo
 The all-in-one family organiser
 Product Requirements Document
 Feature 1 — Login & Account Creation
@@ -8,9 +8,9 @@ Target markets: European Union & Africa     |     Model: Freemium → subscripti
 Field
 Detail
 Document
-OmniKin PRD — Feature 1: Login & Account Creation
+KinHolo PRD — Feature 1: Login & Account Creation
 Owner
-Product Management (OmniKin)
+Product Management (KinHolo)
 Status
 Draft for review
 Version
@@ -18,9 +18,9 @@ Version
 Last updated
 5 June 2026
 Source spec
-OmniKin Feature Specification — Feature 1 (Epics 1.1–1.4)
+KinHolo Feature Specification — Feature 1 (Epics 1.1–1.4)
 Related
-OmniKin Strategic Market Analysis; OmniKin Style Guide v1.0; Feature 2 (Roles & Permissions); Feature 14 (Data Privacy & Compliance)
+KinHolo Strategic Market Analysis; KinHolo Style Guide v1.0; Feature 2 (Roles & Permissions); Feature 14 (Data Privacy & Compliance)
 [Heading3] Changelog
 Version
 Date
@@ -34,13 +34,13 @@ Move the changelog to the top of the document once edits begin; notify all contr
 [Heading1] Contents
 [Heading1] Problem Alignment
 [Heading2] Problem & Opportunity
-Families entering OmniKin must pass through one front door — and that door has to be effortless enough for a time-poor parent to set up in under two minutes, yet strong enough to protect a store of calendars, documents, locations and children’s data. Today no family organiser does both well; that gap is the opportunity.
-Authentication is not a convenience layer for OmniKin — it is the first line of legal and reputational defence and the architectural foundation for everything the product promises. Because every household member (including children) authenticates with their own credential rather than a shared family password, login is what makes per-member roles, age-appropriate access, GDPR-K consent and a clean audit trail possible at all. Get the front door right and the privacy-by-design wedge that differentiates OmniKin becomes real; get it wrong and the whole proposition collapses.
+Families entering KinHolo must pass through one front door — and that door has to be effortless enough for a time-poor parent to set up in under two minutes, yet strong enough to protect a store of calendars, documents, locations and children’s data. Today no family organiser does both well; that gap is the opportunity.
+Authentication is not a convenience layer for KinHolo — it is the first line of legal and reputational defence and the architectural foundation for everything the product promises. Because every household member (including children) authenticates with their own credential rather than a shared family password, login is what makes per-member roles, age-appropriate access, GDPR-K consent and a clean audit trail possible at all. Get the front door right and the privacy-by-design wedge that differentiates KinHolo becomes real; get it wrong and the whole proposition collapses.
 [Heading3] Why does this matter to our customers and business?
-[ListParagraph] Customers — a parent wants to start using OmniKin immediately, without wrestling with a sign-up flow; once in, they need confidence that the family’s private data is genuinely protected and that each member — adult or child — has the right level of access.
-[ListParagraph] Business — login is the top of the activation funnel (drop-off here caps every downstream metric) and the gate on regulatory exposure. Individual credentials unlock the privacy-first positioning that is OmniKin’s sharpest competitive advantage against ad-funded incumbents.
+[ListParagraph] Customers — a parent wants to start using KinHolo immediately, without wrestling with a sign-up flow; once in, they need confidence that the family’s private data is genuinely protected and that each member — adult or child — has the right level of access.
+[ListParagraph] Business — login is the top of the activation funnel (drop-off here caps every downstream metric) and the gate on regulatory exposure. Individual credentials unlock the privacy-first positioning that is KinHolo’s sharpest competitive advantage against ad-funded incumbents.
 [Heading3] What evidence or insights support this?
-[ListParagraph] The category leader, Cozi (12M+ families), uses a single shared household password — which makes per-member permissions, child-data consent and audit logging effectively impossible. This is a structural weakness OmniKin can convert into a differentiator.
+[ListParagraph] The category leader, Cozi (12M+ families), uses a single shared household password — which makes per-member permissions, child-data consent and audit logging effectively impossible. This is a structural weakness KinHolo can convert into a differentiator.
 [ListParagraph] The EU market is governed by the GDPR (age of valid consent 13–16 by member state) and the Digital Services Act’s July 2025 minor-protection guidelines; regulators have shown teeth (TikTok fined €345M over children’s data). African markets add NDPA (Nigeria), DPA (Kenya) and POPIA (South Africa).
 [ListParagraph] Sub-Saharan Africa is mobile-first and connectivity is intermittent and costly; phone-number sign-in and offline-tolerant sessions are a reach requirement, not a nicety. Incumbents (Cozi, FamilyWall, Maple) assume reliable connectivity and email-first sign-up.
 [ListParagraph] 57.8% of EU households have all adults in employment — the time-poor segment for whom a sub-two-minute setup is decisive.
@@ -53,7 +53,7 @@ Authentication is not a convenience layer for OmniKin — it is the first line o
 [ListParagraph] DSA minor-protection guidelines (July 2025) and active GDPR enforcement make privacy-by-design at the authentication layer time-sensitive — it cannot be retrofitted after child data is already processed.
 [ListParagraph] Login is a prerequisite for every other feature in the backlog; it must land first and land solidly.
 Competitive context
-Cozi — the 12M-family incumbent — uses a single shared household account with one shared family password that everyone types in, which makes per-member permissions, child-data consent and audit logging effectively impossible. FamilyWall and Maple offer individual accounts but remain developed-market-focused with no offline or phone-first sign-in. OmniKin’s opportunity is to make secure, per-member, privacy-first authentication the default — and to make it work on a low-end Android phone with patchy data.
+Cozi — the 12M-family incumbent — uses a single shared household account with one shared family password that everyone types in, which makes per-member permissions, child-data consent and audit logging effectively impossible. FamilyWall and Maple offer individual accounts but remain developed-market-focused with no offline or phone-first sign-in. KinHolo’s opportunity is to make secure, per-member, privacy-first authentication the default — and to make it work on a low-end Android phone with patchy data.
 [Heading2] Assumptions & Hypothesis
 [Heading3] Assumptions
 [ListParagraph] Parents will accept a slightly longer initial setup (per-member identity) in exchange for clear privacy and child-protection benefits, provided the owner flow itself stays under ~2 minutes.
@@ -72,7 +72,7 @@ Concretely, the approach spans four coherent slices, delivered as the four epics
 Option
 Why not chosen
 Single shared household password (Cozi model)
-Structurally prevents per-member roles, child-data consent and audit logging — the exact capabilities that are OmniKin’s differentiator and a regulatory requirement under GDPR-K.
+Structurally prevents per-member roles, child-data consent and audit logging — the exact capabilities that are KinHolo’s differentiator and a regulatory requirement under GDPR-K.
 Email-only sign-up (FamilyWall / Maple model)
 Excludes a large share of African target users who have no email; undermines the emerging-market reach that is the second strategic pillar.
 SSO-only (no password option)
@@ -80,8 +80,8 @@ Leaves out users without Google/Apple accounts and low-end-device users; creates
 Defer MFA and session management to a later release
 These are cheap to design in now and expensive to retrofit; the data sensitivity (documents, children, location) warrants step-up security from day one.
 [Heading2] Narrative
-Anna downloads OmniKin on her commute. She taps “Continue with Google”, names the household “Reuter Family”, and is in — Owner of a private space — before her train reaches the next stop. She adds her partner and two children; each gets their own login, and the children inherit age-appropriate defaults automatically. Later that week she switches phones, signs in once, and enables Face ID; the document vault still asks for a fresh check when she opens it, which quietly reassures her.
-In Nairobi, Grace has no email and a patchy connection. She signs up with her phone number, receives a six-digit code, and chooses a name and avatar colour. When the network drops at the market, OmniKin still opens to her household in a clearly-labelled cached state; her sign-in never round-trips more data than it must, so it barely touches her bundle. The interface is in Swahili. Her mother joins on an even older handset and it works the same way.
+Anna downloads KinHolo on her commute. She taps “Continue with Google”, names the household “Reuter Family”, and is in — Owner of a private space — before her train reaches the next stop. She adds her partner and two children; each gets their own login, and the children inherit age-appropriate defaults automatically. Later that week she switches phones, signs in once, and enables Face ID; the document vault still asks for a fresh check when she opens it, which quietly reassures her.
+In Nairobi, Grace has no email and a patchy connection. She signs up with her phone number, receives a six-digit code, and chooses a name and avatar colour. When the network drops at the market, KinHolo still opens to her household in a clearly-labelled cached state; her sign-in never round-trips more data than it must, so it barely touches her bundle. The interface is in Swahili. Her mother joins on an even older handset and it works the same way.
 Marco forgets which email he used. Rather than hitting a dead end, he recovers through his linked phone number; the reset signs out his other sessions and notifies him, so he knows it was him. None of these three share a password — every action in the household is attributable, and that is exactly what makes the shared space feel safe.
 [Heading2] Goals
 In rough priority order. Targets are directional placeholders for refinement with data, design and engineering, not final commitments.
@@ -154,7 +154,7 @@ Differentiated access (privacy & reach)
 US-1.4.1 – US-1.4.2
 [Heading3] Epic 1.1 — Household & account creation
 US-1.1.1  Create a household and owner account
-As a parent setting up OmniKin for the first time, I want to create a household and become its owner, so that I have a private shared space my family can join.
+As a parent setting up KinHolo for the first time, I want to create a household and become its owner, so that I have a private shared space my family can join.
 Prerequisite: User has installed the app or opened the web app and has no existing account; a verified email address or mobile number is available.
 Acceptance criteria
 [ListParagraph] Given a new user on the sign-up screen, when they enter a household name, their email or phone, and a password and tap “Create household”, then an account is created and they are designated the household Owner.
@@ -170,7 +170,7 @@ Acceptance criteria
 [ListParagraph] Given the profile step, when the user enters a display name, then it is saved and used across calendar, lists, messaging and agenda attributions.
 [ListParagraph] Validation: Display name is 1–40 characters; duplicate names within the same household are allowed but the UI appends a disambiguator (e.g. “Alex (2)”) for clarity.
 [ListParagraph] Functional: The user may pick an avatar colour from the household palette; the system prevents two members holding the identical colour to keep the calendar legible.
-[ListParagraph] Guardrail: Profanity and impersonation of the Owner role label (e.g. “Admin”, “OmniKin”) are blocked by a denylist.
+[ListParagraph] Guardrail: Profanity and impersonation of the Owner role label (e.g. “Admin”, “KinHolo”) are blocked by a denylist.
 US-1.1.3  Enforce password strength at creation
 As a security-conscious user, I want the app to require a strong password, so that my family’s data is not exposed by a weak credential.
 Prerequisite: User is on a screen that sets or changes a password.
@@ -201,13 +201,13 @@ US-1.2.2  Sign up / sign in with SSO (Google, Apple)
 As a user who prefers not to manage another password, I want to use Google or Apple sign-in, so that onboarding is one tap.
 Prerequisite: Device has a Google/Apple account; provider SDK is configured.
 Acceptance criteria
-[ListParagraph] Given the SSO option, when the user authorises with the provider, then OmniKin creates or links an account using the verified provider email.
-[ListParagraph] Functional: If the provider email already matches an OmniKin account, the flows are linked rather than duplicated, after explicit user confirmation.
-[ListParagraph] Guardrail: OmniKin requests the minimum scope (identity + email only); it never requests contacts, calendar or drive scopes at sign-in.
+[ListParagraph] Given the SSO option, when the user authorises with the provider, then KinHolo creates or links an account using the verified provider email.
+[ListParagraph] Functional: If the provider email already matches an KinHolo account, the flows are linked rather than duplicated, after explicit user confirmation.
+[ListParagraph] Guardrail: KinHolo requests the minimum scope (identity + email only); it never requests contacts, calendar or drive scopes at sign-in.
 [ListParagraph] Validation: Apple’s “hide my email” relay addresses are fully supported for recovery and notifications.
 [ListParagraph] Functional: Apple sign-in is offered on iOS to comply with App Store policy where third-party SSO is present.
 US-1.2.3  Enable biometric / device unlock
-As a member on a personal device, I want to unlock OmniKin with Face ID or a fingerprint, so that re-entry is fast but still secure.
+As a member on a personal device, I want to unlock KinHolo with Face ID or a fingerprint, so that re-entry is fast but still secure.
 Prerequisite: User has signed in at least once on a device that supports platform biometrics.
 Acceptance criteria
 [ListParagraph] Given a successful first sign-in, when the user opts in, then subsequent app opens may be unlocked biometrically.
@@ -256,7 +256,7 @@ Acceptance criteria
 [ListParagraph] Guardrail: Children’s accounts are provisioned by a parent/guardian and inherit GDPR-K-compliant defaults (see Feature 14).
 [ListParagraph] Validation: An Owner cannot disable per-member identity to “simplify” login, because doing so would break consent and audit guarantees.
 ★  DIFFERENTIATOR
-vs Cozi — Cozi shares one family password across all members, which prevents per-member roles, child-data consent and audit logging. OmniKin’s individual credentials are a privacy-by-design prerequisite.
+vs Cozi — Cozi shares one family password across all members, which prevents per-member roles, child-data consent and audit logging. KinHolo’s individual credentials are a privacy-by-design prerequisite.
 US-1.4.2  Low-bandwidth & cached-session sign-in for emerging markets
 As a member on a low-end phone with intermittent, costly data, I want to sign in and stay signed in reliably, so that connectivity gaps never lock me out of my household.
 Prerequisite: User has authenticated successfully at least once on the device.
@@ -267,10 +267,10 @@ Acceptance criteria
 [ListParagraph] Validation: When offline, the app states clearly that it is showing cached data and queues any credential change until connectivity returns.
 [ListParagraph] Functional: The login UI is fully localised, including right-to-left readiness and local languages such as Swahili.
 ★  DIFFERENTIATOR
-vs Cozi / FamilyWall / Maple — all assume reliable connectivity and email-first sign-up. OmniKin treats phone-first, offline-tolerant, low-data authentication as a core requirement for African market reach.
+vs Cozi / FamilyWall / Maple — all assume reliable connectivity and email-first sign-up. KinHolo treats phone-first, offline-tolerant, low-data authentication as a core requirement for African market reach.
 [Heading3] Illustrative use cases — common & edge
 [ListParagraph] Common — Anna creates the household with Google SSO in under two minutes, then provisions individual logins for her partner and two children.
-[ListParagraph] Common — Grace signs up by phone number, verifies a 6-digit OTP, and continues to use OmniKin in a cached state when the network drops.
+[ListParagraph] Common — Grace signs up by phone number, verifies a 6-digit OTP, and continues to use KinHolo in a cached state when the network drops.
 [ListParagraph] Edge — A user reaches the 3-household ownership cap and sees a clear explanatory error rather than a silent failure.
 [ListParagraph] Edge — An SSO provider email already exists as a password account; the user is asked to confirm linking rather than creating a duplicate.
 [ListParagraph] Edge — A member loses their phone; from another device they “sign out everywhere”, immediately invalidating the lost device’s refresh token.
@@ -299,7 +299,7 @@ Show the end-to-end experience (happy and unhappy paths) with design and enginee
 [Heading2] Key Logic
 Rules that guide design and development, including non-functional requirements. Easier to state here than to infer from screens.
 [Heading3] Business & validation rules
-[ListParagraph] Household name: 2–60 chars, trimmed, no emoji/control chars. Display name: 1–40 chars; duplicates allowed with auto-disambiguator; profanity and reserved labels (“Admin”, “OmniKin”) blocked.
+[ListParagraph] Household name: 2–60 chars, trimmed, no emoji/control chars. Display name: 1–40 chars; duplicates allowed with auto-disambiguator; profanity and reserved labels (“Admin”, “KinHolo”) blocked.
 [ListParagraph] Email = RFC 5322; phone = E.164; inline validation gates submission. Password ≥ 10 chars, breached-password check, confirm-match required.
 [ListParagraph] OTP = 6 digits, 10-min expiry, single-use, ≤ 5 requests/hour/contact. Password-reset link = 30-min expiry, single-use, invalidated by a newer one.
 [ListParagraph] Ownership cap: ≤ 3 households per email/phone (configurable). Failed sign-ins: progressive rate-limit after 5; no permanent lock without recovery.
@@ -412,7 +412,7 @@ Phone-first OTP path; encrypted cached/offline session; payload minimisation; Sw
 ★ Differentiator stories (Epic 1.4). Milestone colours mirror the epic sequencing: foundations/EU core (teal), SSO & security (interactive teal), recovery (cornflower), African-reach differentiators (green).
 [Heading1] Appendix
 [Heading2] FAQ
-[ListParagraph] Why not a single shared household password like Cozi? Because it structurally prevents per-member roles, child-data consent and audit logging — the privacy capabilities that differentiate OmniKin and are required under GDPR-K.
+[ListParagraph] Why not a single shared household password like Cozi? Because it structurally prevents per-member roles, child-data consent and audit logging — the privacy capabilities that differentiate KinHolo and are required under GDPR-K.
 [ListParagraph] Do children get their own logins? Yes — every member including children has a distinct credential; child accounts are provisioned by a parent/guardian and inherit GDPR-K-compliant defaults (Feature 14).
 [ListParagraph] What if a user has no email? Phone-number-plus-OTP is a first-class sign-in path, not a fallback — central to African-market reach.
 [ListParagraph] What happens offline? The app opens to a clearly-labelled cached (read-only if needed) state without a network round-trip; credential changes queue until connectivity returns.
@@ -444,7 +444,7 @@ Low-end-device performance
 Medium
 Lightweight assets; minimised auth payload; test on sub-$60 Android and intermittent data.
 [Heading2] Source & references
-[ListParagraph] OmniKin Feature Specification — Feature 1 (Epics 1.1–1.4), the source of all user stories and acceptance criteria captured here.
-[ListParagraph] OmniKin Strategic Market Analysis (June 2026) — market, competitive and regulatory context.
-[ListParagraph] OmniKin Style Guide v1.0 — colour, typography and component rules applied to this document.
+[ListParagraph] KinHolo Feature Specification — Feature 1 (Epics 1.1–1.4), the source of all user stories and acceptance criteria captured here.
+[ListParagraph] KinHolo Strategic Market Analysis (June 2026) — market, competitive and regulatory context.
+[ListParagraph] KinHolo Style Guide v1.0 — colour, typography and component rules applied to this document.
 Quantities such as character limits and time windows are sensible defaults for refinement, not final commitments. Competitor and regulatory details reflect public information as of mid-2026 and should be re-validated before build or investment decisions.

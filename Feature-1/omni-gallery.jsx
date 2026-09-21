@@ -1,4 +1,4 @@
-/* OmniKin · static screen gallery on the design canvas. */
+/* KinHolo · static screen gallery on the design canvas. */
 const { SCREENS, GALLERY, OK_THEMES, OK_FONT, OK_MONO, DeviceFrame } = window;
 
 function GToggle({ options, value, onChange }) {
@@ -19,13 +19,13 @@ function ControlBar({ platform, setPlatform, theme, setTheme }) {
     <div style={{ position: 'fixed', top: 16, left: 16, zIndex: 1000, display: 'flex', alignItems: 'center', gap: 12, background: 'rgba(255,255,255,.86)', backdropFilter: 'blur(12px)', borderRadius: 14, padding: '10px 12px', boxShadow: '0 4px 20px rgba(14,58,64,.14), inset 0 0 0 1px rgba(14,58,64,.06)' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 9, paddingLeft: 4, paddingRight: 6 }}>
         <div style={{ width: 28, height: 28, borderRadius: 8, background: '#1C6E78', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: OK_MONO, fontSize: 10, color: '#fff' }}>OK</div>
-        <div style={{ fontFamily: OK_FONT, fontSize: 13.5, fontWeight: 700, color: '#1C6E78', letterSpacing: -0.2 }}>OmniKin · All screens</div>
+        <div style={{ fontFamily: OK_FONT, fontSize: 13.5, fontWeight: 700, color: '#1C6E78', letterSpacing: -0.2 }}>KinHolo · All screens</div>
       </div>
       <div style={{ width: 1, height: 24, background: 'rgba(14,58,64,.12)' }} />
       <GToggle value={platform} onChange={setPlatform} options={[{ v: 'ios', label: 'iOS' }, { v: 'android', label: 'Android' }]} />
       <GToggle value={theme} onChange={setTheme} options={[{ v: 'light', label: 'Light' }, { v: 'dark', label: 'Dark' }]} />
       <div style={{ width: 1, height: 24, background: 'rgba(14,58,64,.12)' }} />
-      <a href="OmniKin Login.html" style={{ textDecoration: 'none', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff', background: '#E2683C', borderRadius: 9, padding: '8px 14px' }}>Open prototype →</a>
+      <a href="KinHolo Login.html" style={{ textDecoration: 'none', fontFamily: OK_FONT, fontSize: 13, fontWeight: 600, color: '#fff', background: '#E2683C', borderRadius: 9, padding: '8px 14px' }}>Open prototype →</a>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 — surfaces that depend on other features or sit in future
+/* KinHolo · Feature 17 — surfaces that depend on other features or sit in future
    considerations. Designed here so the shape is agreed, parked for a later release. */
 const {
   OK_FONT, OK_MONO, I, Screen, Btn,
@@ -83,8 +83,8 @@ function MobileMoneyParked({ t, platform, back }) {
   return (
     <ParkedShell t={t} platform={platform} back={back} title="Mobile money"
       heading="Reference a mobile-money payment"
-      body="In markets where households settle in mobile money, a logged expense could carry the reference of a payment that already happened. OmniKin would still never move money."
-      note="A future consideration, not this release. OmniKin records and monitors money; it never moves it.">
+      body="In markets where households settle in mobile money, a logged expense could carry the reference of a payment that already happened. KinHolo would still never move money."
+      note="A future consideration, not this release. KinHolo records and monitors money; it never moves it.">
       <Card t={t} pad={16}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 11 }}>
           <div style={{ width: 36, height: 36, borderRadius: 11, background: t.surfaceAlt, display: 'flex', alignItems: 'center', justifyContent: 'center', flex: '0 0 auto' }}>{MI.coins(t.green, 19)}</div>

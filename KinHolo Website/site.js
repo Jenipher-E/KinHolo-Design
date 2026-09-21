@@ -1,4 +1,4 @@
-/* OmniKin website · shared shell, icons, scroll reveal, phone demos */
+/* KinHolo website · shared shell, icons, scroll reveal, phone demos */
 (function(){
 const P = [
   ['index.html','Home'],['product.html','Product'],['modules.html','Upcoming'],
@@ -42,7 +42,7 @@ function shell(){
   const head = document.querySelector('[data-head]');
   if(head) head.innerHTML =
     '<header class="site-head"><div class="head-in">'+
-      '<a class="lockup" href="index.html" aria-label="OmniKin home">'+mark('dark')+'<span>OmniKin</span></a>'+
+      '<a class="lockup" href="index.html" aria-label="KinHolo home">'+mark('dark')+'<span>KinHolo</span></a>'+
       '<nav class="nav">'+links+'</nav>'+
       '<a class="btn btn-cta btn-sm head-cta" href="contact.html#waitlist">Join the waitlist</a>'+
       '<button class="burger" aria-label="Menu" aria-expanded="false"><i></i></button>'+
@@ -51,12 +51,12 @@ function shell(){
   const foot = document.querySelector('[data-foot]');
   if(foot) foot.innerHTML =
     '<footer class="site-foot"><div class="wrap"><div class="foot-grid">'+
-      '<div><a class="lockup" href="index.html">'+mark('dark')+'<span>OmniKin</span></a>'+
+      '<div><a class="lockup" href="index.html">'+mark('dark')+'<span>KinHolo</span></a>'+
         '<p style="margin-top:16px;max-width:27em">One calm place for everything a household runs on. Private by design, built to work on any phone and any connection.</p></div>'+
       '<div><h5>Product</h5><ul><li><a href="product.html">Overview</a></li><li><a href="product.html#modules">Modules</a></li><li><a href="modules.html">Upcoming</a></li><li><a href="product.html#privacy">Privacy</a></li></ul></div>'+
       '<div><h5>Company</h5><ul><li><a href="about.html">About us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html#waitlist">Waitlist</a></li></ul></div>'+
       '<div><h5>Where we build</h5><ul><li>European Union</li><li>Africa</li><li><a href="contact.html">Partner with us</a></li></ul></div>'+
-    '</div><div class="foot-bottom"><span>&copy; 2026 OmniKin. All rights reserved.</span>'+
+    '</div><div class="foot-bottom"><span>&copy; 2026 KinHolo. All rights reserved.</span>'+
       '<span>No ads. No profiling. No selling your household data.</span></div></div></footer>';
 
   const b = document.querySelector('.burger'), dr = document.querySelector('.drawer');

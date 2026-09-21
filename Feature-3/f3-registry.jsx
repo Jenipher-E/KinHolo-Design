@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — screen registry, version starts, gallery grouping. */
+/* KinHolo · Feature 3 — screen registry, version starts, gallery grouping. */
 const W = window;
 
 const F3_SCREENS = {

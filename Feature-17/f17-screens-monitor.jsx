@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 — Epic 17.3 (differentiated): live spend against budget,
+/* KinHolo · Feature 17 — Epic 17.3 (differentiated): live spend against budget,
    the history-based overspend flag in both versions, acting on it, flag restraint
    settings, and budget-versus-actual trends. */
 const {

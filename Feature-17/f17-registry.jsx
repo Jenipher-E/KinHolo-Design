@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 (Budgets & Expenses) — screen registry, version starts, gallery grouping. */
+/* KinHolo · Feature 17 (Budgets & Expenses) — screen registry, version starts, gallery grouping. */
 const W = window;
 
 const F17_SCREENS = {

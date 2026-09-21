@@ -1,4 +1,4 @@
-/* OmniKin · Feature 17 (Budgets & Expenses) — version shells.
+/* KinHolo · Feature 17 (Budgets & Expenses) — version shells.
    Version A (Calm): reached from a quiet Home card · one scrollable list grouped by cadence ·
      compact rows · the overspend flag as a calm inline banner · sheets for actions.
    Version B (Bold): reached from a bold Home card · teal hero carrying the month's ring and

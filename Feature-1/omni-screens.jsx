@@ -1,4 +1,4 @@
-/* OmniKin · all screens + flow graph. Consumes window globals from omni-kit.jsx. */
+/* KinHolo · all screens + flow graph. Consumes window globals from omni-kit.jsx. */
 const {
   OK_FONT, OK_MONO, OK_AVATARS, I,
   DeviceFrame, Screen, Btn, Field, StrengthMeter, OTPCells, Steps, FlowHeader, Divider, Banner, LogoMark,
@@ -46,7 +46,7 @@ function WelcomeA({ t, platform, go, showPrivacy = true }) {
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 16 }}>
           <LogoMark t={t} size={68} />
           <div>
-            <div style={{ fontFamily: OK_FONT, fontSize: 32, fontWeight: 700, color: t.title, letterSpacing: -0.5 }}>OmniKin</div>
+            <div style={{ fontFamily: OK_FONT, fontSize: 32, fontWeight: 700, color: t.title, letterSpacing: -0.5 }}>KinHolo</div>
             <div style={{ fontFamily: OK_FONT, fontSize: 16, color: t.slate, marginTop: 4 }}>The all-in-one family organiser</div>
           </div>
           {showPrivacy && <div style={{ display: 'inline-flex', alignItems: 'center', gap: 7, background: t.panelTeal, padding: '7px 13px', borderRadius: 999, marginTop: 2 }}>
@@ -121,7 +121,7 @@ function GoogleSheet({ t, platform, go, back }) {
           <span style={{ fontFamily: OK_FONT, fontSize: 15, fontWeight: 600, color: t.ink }}>Sign in with Google</span>
         </div>
         <div style={{ fontFamily: OK_FONT, fontSize: 20, fontWeight: 600, color: t.ink, margin: '14px 0 4px' }}>Choose an account</div>
-        <div style={{ fontFamily: OK_FONT, fontSize: 14, color: t.slate, marginBottom: 14 }}>to continue to <span style={{ color: t.teal700, fontWeight: 600 }}>OmniKin</span></div>
+        <div style={{ fontFamily: OK_FONT, fontSize: 14, color: t.slate, marginBottom: 14 }}>to continue to <span style={{ color: t.teal700, fontWeight: 600 }}>KinHolo</span></div>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           {accounts.map((a, i) => (
             <button key={i} onClick={() => go('nameHousehold')} style={{ display: 'flex', alignItems: 'center', gap: 13, padding: '13px 6px', border: 'none', borderTop: `1px solid ${t.hairline}`, background: 'transparent', cursor: 'pointer', textAlign: 'left' }}>
@@ -139,7 +139,7 @@ function GoogleSheet({ t, platform, go, back }) {
         </div>
         <div style={{ marginTop: 16, background: t.panelTeal, borderRadius: 12, padding: '11px 13px', display: 'flex', gap: 9, alignItems: 'flex-start' }}>
           {I.shield(t.teal700, 16)}
-          <span style={{ fontFamily: OK_FONT, fontSize: 12.5, color: t.teal800, lineHeight: 1.45 }}>OmniKin will only receive your <b>name and email</b>, never your contacts, calendar or files.</span>
+          <span style={{ fontFamily: OK_FONT, fontSize: 12.5, color: t.teal800, lineHeight: 1.45 }}>KinHolo will only receive your <b>name and email</b>, never your contacts, calendar or files.</span>
         </div>
         <div style={{ textAlign: 'center', marginTop: 16 }}><Link t={t} onClick={back}>Cancel</Link></div>
       </div>
@@ -386,7 +386,7 @@ function BiometricEnable({ t, platform, go }) {
           <div style={{ transform: 'scale(1.7)' }}>{isFace ? I.faceid(t.teal700) : I.finger(t.teal700)}</div>
         </div>
         <H1 t={t} style={{ fontSize: 26 }}>{isFace ? 'Turn on Face ID?' : 'Turn on fingerprint unlock?'}</H1>
-        <Lead t={t} style={{ marginTop: 12, maxWidth: 300 }}>Re-open OmniKin in a tap. Fast, but still secure. Your password is never stored on this device.</Lead>
+        <Lead t={t} style={{ marginTop: 12, maxWidth: 300 }}>Re-open KinHolo in a tap. Fast, but still secure. Your password is never stored on this device.</Lead>
       </Pad>
       <Spacer h={26} />
       <Pad>

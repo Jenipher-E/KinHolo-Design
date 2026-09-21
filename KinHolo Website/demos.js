@@ -1,4 +1,4 @@
-/* OmniKin website · the animated "app in use" screens used in the phone frames.
+/* KinHolo website · the animated "app in use" screens used in the phone frames.
    Each screen is a .scr; data-beat="class@ms" applies a class after N ms while the
    screen is on, which is what gives the loop its sense of someone using the app. */
 const S = {};

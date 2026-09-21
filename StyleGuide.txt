@@ -1,15 +1,15 @@
-OmniKin
+KinHolo
 Style Guide
 Colour system · Typography · Application rules
-The single source of truth for how OmniKin looks and reads — across the product UI, marketing, and documents. One palette, one type system, applied consistently so that “privacy-first, all-in-one, trustworthy” is felt before it is read.
+The single source of truth for how KinHolo looks and reads — across the product UI, marketing, and documents. One palette, one type system, applied consistently so that “privacy-first, all-in-one, trustworthy” is felt before it is read.
 How to use this guide.  Every visual decision maps to a named token (e.g. Teal 700) with a fixed hex value. Always reference the token, never a one-off colour. The anchor of the whole system is the brand teal #1C6E78, used for the title and primary brand expression throughout.
 [Heading1] 1.  Brand essence
-OmniKin is a calm, trustworthy household operating system. The visual language has three jobs: feel safe (privacy is the brand), feel unified (one app, not a patchwork), and feel inclusive (as at home in Lagos or Nairobi as in Berlin or Paris).
+KinHolo is a calm, trustworthy household operating system. The visual language has three jobs: feel safe (privacy is the brand), feel unified (one app, not a patchwork), and feel inclusive (as at home in Lagos or Nairobi as in Berlin or Paris).
 [ListParagraph] Calm & trustworthy:  deep teals, generous white space, no visual clutter, no ad-style noise.
 [ListParagraph] Unified:  one consistent palette and type scale across all fourteen features and every surface.
 [ListParagraph] Inclusive & light:  high-contrast, legible type and lightweight assets that work on low-end devices and small screens.
 [Heading1] 2.  Major brand colours
-OmniKin has three brand colours. These are the identity of the product — used for the logo, website and all branding. Everything in the wider palette (section 3) is built around and in service of these three.
+KinHolo has three brand colours. These are the identity of the product — used for the logo, website and all branding. Everything in the wider palette (section 3) is built around and in service of these three.
 1 · PRIMARY
 Teal 700
 #1C6E78
@@ -56,7 +56,7 @@ Teal 100 / Tint
 Table header fills (light variant), info panels, section backgrounds.
 Figure 1. The teal ramp. Teal 700 (#1C6E78) is the immovable anchor; the rest are derived tones for hierarchy and surface.
 [Heading2] 3.2  Accents & secondary brand
-Two of OmniKin’s three brand colours live here. Warm coral is the secondary accent — the call-to-action and highlight colour. Cornflower blue is the secondary sub-header colour. Differentiator green flags where OmniKin beats incumbents and doubles as the success state.
+Two of KinHolo’s three brand colours live here. Warm coral is the secondary accent — the call-to-action and highlight colour. Cornflower blue is the secondary sub-header colour. Differentiator green flags where KinHolo beats incumbents and doubles as the success state.
 Swatch
 Token
 Hex
@@ -85,7 +85,7 @@ Differentiator badges (★), success states, positive confirmations.
 Green 100 / Tint
 #E1F1E7
 Differentiator badge background, success-panel fill.
-★ DIFFERENTIATOR  Green badge — used to flag where OmniKin diverges from competitors. Green #2E8C5A on a pale green #E1F1E7 panel with a 3pt green left border.
+★ DIFFERENTIATOR  Green badge — used to flag where KinHolo diverges from competitors. Green #2E8C5A on a pale green #E1F1E7 panel with a 3pt green left border.
 Figure 2. The differentiator badge, rebuilt from the tokens above — the same pattern used throughout the Feature Specification.
 [Heading2] 3.3  Neutrals
 Neutrals carry text and structure. They are warmed very slightly toward teal so nothing on the page feels cold or detached from the brand.
@@ -233,7 +233,7 @@ Muted
 Figure 4. The type scale. Hierarchy is driven by size, weight and colour — the family never changes.
 [Heading2] 5.3  Specimen
 The roles above, rendered:
-Cover / Display   OmniKin
+Cover / Display   KinHolo
 H1   A shared family calendar
 H2   Out-of-stock intelligence
 Lead   One place that keeps the whole household on the same page.
@@ -255,4 +255,4 @@ The baseline rules every screen and document inherits unless a role above overri
 [ListParagraph] Keep Coral rare: it loses its “act now” power if it appears more than once or twice per screen.
 [ListParagraph] No ad-style visual noise, no gradients on text, no more than two decorative accent colours in one view (Cornflower Blue is structural for sub-heads, not a decorative accent) — restraint is the brand.
 [ListParagraph] Assets stay lightweight (SVG icons, variable fonts, compressed images) so the system performs on low-end devices, in line with the African-market strategy.
-One palette. One type system. Applied the same way every time — that consistency is what makes OmniKin read as trustworthy.
+One palette. One type system. Applied the same way every time — that consistency is what makes KinHolo read as trustworthy.

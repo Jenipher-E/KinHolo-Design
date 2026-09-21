@@ -1,4 +1,4 @@
-/* OmniKin · Feature 2 (Household Access) — data model.
+/* KinHolo · Feature 2 (Household Access) — data model.
    Reuter Family, built from the PRD2 narrative (Amara's household):
    owner + co-owner, grandparent, teen, child, carer, plus a co-parenting space. */
 

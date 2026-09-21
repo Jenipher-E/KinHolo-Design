@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — version shells.
+/* KinHolo · Feature 3 — version shells.
    Version A (Calm): opened from Home/Lists card · single stream + filter chips · compact rows · sold-out sheet.
    Version B (Bold): own bottom-tab hub · grouped-by-store sections · airy cards · full-screen sold-out. */
 const {

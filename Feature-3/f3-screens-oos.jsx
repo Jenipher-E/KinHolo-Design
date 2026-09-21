@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — Epic 3.2: Out-of-stock intelligence (the differentiator).
+/* KinHolo · Feature 3 — Epic 3.2: Out-of-stock intelligence (the differentiator).
    Sold-out capture (sheet A / full-screen B), auto-carry, substitute notification,
    accept / send-instructions, awaiting-reply, and the resolved view. */
 const {
@@ -80,7 +80,7 @@ function SoldOutFullB({ t, platform, go, back }) {
           </div>
           <div style={{ width: 64, height: 64, borderRadius: 18, background: 'rgba(255,255,255,.16)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: 6 }}>{FI.alert('#fff', 34)}</div>
           <div style={{ fontFamily: OK_FONT, fontSize: 27, fontWeight: 800, color: '#fff', letterSpacing: -0.5, marginTop: 16 }}>Out of stock?</div>
-          <div style={{ fontFamily: OK_FONT, fontSize: 14.5, color: 'rgba(255,255,255,.85)', marginTop: 6, lineHeight: 1.5 }}>Mark it sold out and OmniKin handles the rest, so you can keep moving through the aisles.</div>
+          <div style={{ fontFamily: OK_FONT, fontSize: 14.5, color: 'rgba(255,255,255,.85)', marginTop: 6, lineHeight: 1.5 }}>Mark it sold out and KinHolo handles the rest, so you can keep moving through the aisles.</div>
         </div>
         <Pad style={{ marginTop: -16 }}>
           <Card t={t} pad={16}><SoldOutItemCard t={t} big /></Card>

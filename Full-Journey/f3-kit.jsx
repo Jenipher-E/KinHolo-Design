@@ -1,4 +1,4 @@
-/* OmniKin · Feature 3 — shopping UI atoms. Consumes kit/omni-kit.jsx globals.
+/* KinHolo · Feature 3 — shopping UI atoms. Consumes kit/omni-kit.jsx globals.
    Calm-bold, brand-token only. Two densities: compact (Version A) / airy (Version B). */
 const { OK_FONT, OK_MONO, I, storeBy } = window;
 

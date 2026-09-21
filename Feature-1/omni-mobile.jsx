@@ -1,4 +1,4 @@
-/* OmniKin · shareable mobile runner. Locked to Welcome B (Bold).
+/* KinHolo · shareable mobile runner. Locked to Welcome B (Bold).
    Fills the real device viewport (no desktop sidebar / no bezel). */
 const { SCREENS, BACK, OK_THEMES, OK_FONT } = window;
 
@@ -76,7 +76,7 @@ function MobileApp() {
             <Seg t={t} value={theme} onChange={setTheme} options={[{ v: 'light', label: 'Light' }, { v: 'dark', label: 'Dark' }]} />
             <div style={{ height: 18 }} />
             <button onClick={restart} style={{ width: '100%', height: 48, borderRadius: 13, border: 'none', background: t.panelTeal, color: t.teal800, fontFamily: OK_FONT, fontSize: 15, fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}>{Ic.reset(t.teal800)} Restart from welcome</button>
-            <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.muted, textAlign: 'center', marginTop: 14, lineHeight: 1.5 }}>OmniKin · Login & Account Creation prototype<br/>Tap the screen's own buttons to move through the flow.</div>
+            <div style={{ fontFamily: OK_FONT, fontSize: 11.5, color: t.muted, textAlign: 'center', marginTop: 14, lineHeight: 1.5 }}>KinHolo · Login & Account Creation prototype<br/>Tap the screen's own buttons to move through the flow.</div>
           </div>
         </div>
       )}
