@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KinHolo · Spectrum K</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Tokens lifted from KinHolo Style Guide v1.0. Never a one-off hex. */
+:root{
+  --teal900:#0E3A40; --teal800:#14525B; --teal700:#1C6E78; --teal500:#2A8C99; --teal300:#74B7C0; --teal100:#E4F0F1;
+  --coral:#E2683C; --blue:#2E5A87; --green:#2E8C5A;
+  --stem-dark:#7FA8D0;
+  --ink:#1E2A2D; --slate:#586A6D; --muted:#8A999B; --hair:#DCE5E6; --canvas:#F6FAFA; --white:#FFFFFF;
+  --r:14px; --shadow:0 1px 2px rgba(14,58,64,.04), 0 8px 24px rgba(14,58,64,.06);
+  --font:'Inter','Segoe UI',Roboto,system-ui,Arial,sans-serif; --mono:'Roboto Mono',ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.sheet{max-width:1120px;margin:0 auto;padding:72px 40px 56px}
+h1,h2,h3,h4{margin:0;letter-spacing:-.02em;line-height:1.2}
+p{margin:0}
+
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--teal500);margin-bottom:14px}
+h1{font-size:52px;font-weight:700;color:var(--teal700)}
+.lede{margin-top:18px;max-width:34em;font-size:17px;color:var(--slate)}
+.section{margin-top:64px}
+.section-label{font-size:11.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);margin-bottom:20px}
+.statement{font-size:26px;font-weight:700;color:var(--ink);max-width:22em;letter-spacing:-.02em;line-height:1.28}
+
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:1fr 1fr}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--white);border:1px solid var(--hair);border-radius:var(--r);box-shadow:var(--shadow)}
+
+/* ── the mark, large, on both grounds ─────────────────── */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:40px}
+.hero > div{border-radius:var(--r);height:300px;display:flex;align-items:center;justify-content:center}
+.hero .light{background:var(--white);border:1px solid var(--hair);box-shadow:var(--shadow)}
+.hero .dark{background:var(--teal900)}
+
+/* ── idea cards ───────────────────────────────────────── */
+.idea{padding:26px 28px 28px}
+.idea .num{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--teal500);display:block;margin-bottom:14px}
+.idea h3{font-size:17px;font-weight:700;color:var(--ink);margin-bottom:8px}
+.idea p{font-size:14.5px;color:var(--slate);line-height:1.6}
+
+/* ── application row ──────────────────────────────────── */
+.app{display:flex;flex-direction:column;align-items:center;gap:12px}
+.app .tile{width:132px;height:132px;border-radius:30px;display:flex;align-items:center;justify-content:center}
+.app .tile.icon{background:var(--teal700)}
+.app .tile.onlight{background:var(--white);border:1px solid var(--hair);box-shadow:var(--shadow)}
+.app .tile.reversed{background:var(--teal900)}
+.app .tile.mono{background:var(--white);border:1px solid var(--hair);box-shadow:var(--shadow)}
+.app .cap{font-family:var(--mono);font-size:11px;color:var(--muted)}
+
+/* ── lockups ──────────────────────────────────────────── */
+.lockup-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.lockup-box{border-radius:var(--r);height:132px;display:flex;align-items:center;justify-content:center;gap:16px}
+.lockup-box.light{background:var(--white);border:1px solid var(--hair);box-shadow:var(--shadow)}
+.lockup-box.dark{background:var(--teal900)}
+.wordmark{font-size:40px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.wordmark.on-light{color:var(--teal700)}
+.wordmark.on-dark{color:var(--white)}
+
+/* ── at size ──────────────────────────────────────────── */
+.sizes{display:flex;align-items:flex-end;gap:52px;padding:34px 36px}
+.size{display:flex;flex-direction:column;align-items:center;gap:14px}
+.size .cap{font-family:var(--mono);font-size:11px;color:var(--muted)}
+
+/* ── stroke colours ───────────────────────────────────── */
+.swatch{overflow:hidden}
+.swatch .chip{height:76px}
+.swatch .body{padding:16px 18px 18px}
+.swatch h4{font-size:14.5px;font-weight:700;color:var(--ink)}
+.swatch .hex{font-family:var(--mono);font-size:12px;color:var(--slate);margin-top:4px}
+.swatch p{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.5}
+
+.foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--hair);font-size:12.5px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <p class="eyebrow">KinHolo · Primary logo</p>
+  <h1>Spectrum K</h1>
+  <p class="lede">The mark for KinHolo. A single geometric monogram that carries the brand name, its promise, and its full palette in one calm shape.</p>
+
+  <div class="hero">
+    <div class="light">
+      <!-- viewBox 326 × 248 · ring centre (125,124) r 106 · stroke 36 -->
+      <svg width="236" height="180" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" role="img" aria-label="KinHolo mark on light">
+        <circle cx="125" cy="124" r="106" stroke="#1C6E78"/>
+        <path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+        <path d="M242 105 L307 32" stroke="#E2683C"/>
+        <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+      </svg>
+    </div>
+    <div class="dark">
+      <svg width="236" height="180" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" role="img" aria-label="KinHolo mark reversed">
+        <circle cx="125" cy="124" r="106" stroke="#FFFFFF"/>
+        <path d="M233.5 27 L233.5 220" stroke="#7FA8D0"/>
+        <path d="M242 105 L307 32" stroke="#E2683C"/>
+        <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">The idea</p>
+    <p class="statement">A ring and a K, set as one mark, where the brand name, its promise and its palette all live together.</p>
+
+    <div class="grid g2" style="margin-top:26px">
+      <div class="card idea">
+        <span class="num">01</span>
+        <h3>One geometric mark.</h3>
+        <p>The ring and the K share a single stroke weight, cap height and rounded cap, so they read as one form rather than a shape set beside a letter.</p>
+      </div>
+      <div class="card idea">
+        <span class="num">02</span>
+        <h3>K for Kin.</h3>
+        <p>Three limbs from one spine: the people in a household, different and joined. It is the half of the mark that moves and reaches outward.</p>
+      </div>
+      <div class="card idea">
+        <span class="num">03</span>
+        <h3>The ring is the whole.</h3>
+        <p><i>Holos</i> means whole. One protective circle, unbroken: a single private shared household, holding everyone safely inside it.</p>
+      </div>
+      <div class="card idea">
+        <span class="num">04</span>
+        <h3>It still reads OK.</h3>
+        <p>Read as letters, the mark says the quietest reassurance there is, in every language the app speaks: everything is handled, everyone is fine.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Application</p>
+    <div class="grid g4">
+      <div class="app">
+        <div class="tile icon">
+          <svg width="82" height="62" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+            <circle cx="125" cy="124" r="106" stroke="#FFFFFF"/>
+            <path d="M233.5 27 L233.5 220" stroke="#7FA8D0"/>
+            <path d="M242 105 L307 32" stroke="#E2683C"/>
+            <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+          </svg>
+        </div>
+        <span class="cap">app icon</span>
+      </div>
+      <div class="app">
+        <div class="tile onlight">
+          <svg width="82" height="62" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+            <circle cx="125" cy="124" r="106" stroke="#1C6E78"/>
+            <path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+            <path d="M242 105 L307 32" stroke="#E2683C"/>
+            <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+          </svg>
+        </div>
+        <span class="cap">on light</span>
+      </div>
+      <div class="app">
+        <div class="tile reversed">
+          <svg width="82" height="62" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+            <circle cx="125" cy="124" r="106" stroke="#FFFFFF"/>
+            <path d="M233.5 27 L233.5 220" stroke="#7FA8D0"/>
+            <path d="M242 105 L307 32" stroke="#E2683C"/>
+            <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+          </svg>
+        </div>
+        <span class="cap">reversed</span>
+      </div>
+      <div class="app">
+        <div class="tile mono">
+          <svg width="82" height="62" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+            <circle cx="125" cy="124" r="106" stroke="#1C6E78"/>
+            <path d="M233.5 27 L233.5 220" stroke="#1C6E78"/>
+            <path d="M242 105 L307 32" stroke="#1C6E78"/>
+            <path d="M234 124 L307 220" stroke="#1C6E78"/>
+          </svg>
+        </div>
+        <span class="cap">single colour</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Primary lockup</p>
+    <div class="lockup-row">
+      <div class="lockup-box light">
+        <svg width="53" height="40" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+          <circle cx="125" cy="124" r="106" stroke="#1C6E78"/>
+          <path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+          <path d="M242 105 L307 32" stroke="#E2683C"/>
+          <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+        </svg>
+        <span class="wordmark on-light">KinHolo</span>
+      </div>
+      <div class="lockup-box dark">
+        <svg width="53" height="40" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+          <circle cx="125" cy="124" r="106" stroke="#FFFFFF"/>
+          <path d="M233.5 27 L233.5 220" stroke="#7FA8D0"/>
+          <path d="M242 105 L307 32" stroke="#E2683C"/>
+          <path d="M234 124 L307 220" stroke="#2E8C5A"/>
+        </svg>
+        <span class="wordmark on-dark">KinHolo</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">At size</p>
+    <div class="card sizes">
+      <div class="size">
+        <svg width="95" height="72" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+          <circle cx="125" cy="124" r="106" stroke="#1C6E78"/><path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+          <path d="M242 105 L307 32" stroke="#E2683C"/><path d="M234 124 L307 220" stroke="#2E8C5A"/>
+        </svg>
+        <span class="cap">72 px</span>
+      </div>
+      <div class="size">
+        <svg width="53" height="40" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+          <circle cx="125" cy="124" r="106" stroke="#1C6E78"/><path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+          <path d="M242 105 L307 32" stroke="#E2683C"/><path d="M234 124 L307 220" stroke="#2E8C5A"/>
+        </svg>
+        <span class="cap">40 px</span>
+      </div>
+      <div class="size">
+        <svg width="32" height="24" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+          <circle cx="125" cy="124" r="106" stroke="#1C6E78"/><path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+          <path d="M242 105 L307 32" stroke="#E2683C"/><path d="M234 124 L307 220" stroke="#2E8C5A"/>
+        </svg>
+        <span class="cap">24 px</span>
+      </div>
+      <div class="size">
+        <svg width="21" height="16" viewBox="0 0 326 248" fill="none" stroke-width="36" stroke-linecap="round" aria-hidden="true">
+          <circle cx="125" cy="124" r="106" stroke="#1C6E78"/><path d="M233.5 27 L233.5 220" stroke="#2E5A87"/>
+          <path d="M242 105 L307 32" stroke="#E2683C"/><path d="M234 124 L307 220" stroke="#2E8C5A"/>
+        </svg>
+        <span class="cap">16 px</span>
+      </div>
+      <p style="font-size:13.5px;color:var(--slate);max-width:20em;padding-bottom:4px">
+        The mark holds to 16 px, which is the favicon and the tab. Below that, use the single-colour version.
+      </p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">One colour per stroke</p>
+    <div class="grid g4">
+      <div class="card swatch">
+        <div class="chip" style="background:#1C6E78"></div>
+        <div class="body">
+          <h4>The ring</h4>
+          <p class="hex">#1C6E78 · Teal 700</p>
+          <p>The whole: one private shared household. White on dark grounds.</p>
+        </div>
+      </div>
+      <div class="card swatch">
+        <div class="chip" style="background:#2E5A87"></div>
+        <div class="body">
+          <h4>K stem</h4>
+          <p class="hex">#2E5A87 · Cornflower</p>
+          <p>The spine the limbs hang from. Lightens to #7FA8D0 on dark.</p>
+        </div>
+      </div>
+      <div class="card swatch">
+        <div class="chip" style="background:#E2683C"></div>
+        <div class="body">
+          <h4>K upper arm</h4>
+          <p class="hex">#E2683C · Coral</p>
+          <p>The warm, human accent. Unchanged on every ground.</p>
+        </div>
+      </div>
+      <div class="card swatch">
+        <div class="chip" style="background:#2E8C5A"></div>
+        <div class="body">
+          <h4>K lower arm</h4>
+          <p class="hex">#2E8C5A · Green</p>
+          <p>Growth and steadiness. Drawn last, so it crosses the junction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">
+    Vector mark · Inter wordmark · single colour capable · legible to 16 px.
+    Geometry: viewBox 326 × 248, ring centre (125, 124) radius 106, stroke 36, round caps.
+  </p>
+
+</div>
+</body>
+</html>
