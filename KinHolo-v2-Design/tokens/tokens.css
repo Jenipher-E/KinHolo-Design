@@ -1,0 +1,18 @@
+:root{
+/* Teal, the brand ground */
+--kh-teal-900:#0E3A40;--kh-teal-800:#14525B;--kh-teal-700:#1C6E78;--kh-teal-500:#2A8C99;--kh-teal-300:#74B7C0;--kh-teal-100:#E4F0F1;
+/* Spectrum accents, from the OK mark */
+--kh-coral:#E2683C;--kh-coral-text:#B9502A;--kh-cornflower:#2E5A87;--kh-cornflower-light:#7FA8D0;--kh-green:#2E8C5A;--kh-green-text:#2E7550;
+/* Neutrals */
+--kh-white:#FFFFFF;--kh-ink:#1E2A2D;--kh-ink-2:#3B4A4C;--kh-slate:#586A6D;--kh-muted:#5F7173;--kh-icon-quiet:#93A4A6;
+--kh-border-control:#CFDCDD;--kh-border-card:#E3EAEB;--kh-hairline:#DCE5E6;--kh-divider:#EAF0F0;--kh-track:#E6EDEE;--kh-surface-soft:#F3F7F7;
+/* On the title band */
+--kh-band-kicker:#9CC9CF;--kh-band-sub:#CFE3E6;--kh-band-photo-scrim:linear-gradient(180deg,rgba(9,38,43,.70) 0%,rgba(9,38,43,.78) 55%,rgba(9,38,43,.90) 100%);
+/* Type */
+--kh-font-display:'Newsreader',Georgia,serif;--kh-font-text:'Hanken Grotesk',system-ui,sans-serif;
+--kh-size-display:33px;--kh-size-title:26px;--kh-size-section:25px;--kh-size-body:15px;--kh-size-row:15.5px;--kh-size-small:13.5px;--kh-size-caption:12.5px;--kh-size-tab:11px;
+/* Shape */
+--kh-radius-sheet:26px;--kh-radius-card:18px;--kh-radius-button:16px;--kh-radius-input:14px;--kh-radius-small:12px;--kh-radius-pill:999px;
+/* Space */
+--kh-gutter:24px;--kh-gutter-band:22px;--kh-section-gap:20px;--kh-row-pad:12px;--kh-touch:44px;--kh-button-h:54px;--kh-button-h-compact:40px;
+}

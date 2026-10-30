@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="design_doc_mode" content="canvas">
+<title>KinHolo v2 · Design C screens</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="src/kinholo.css">
+<style>
+body{margin:0;font-family:'Hanken Grotesk',sans-serif;color:#1E2A2D}
+.dhd{position:absolute;left:0;top:0;width:1400px;display:flex;align-items:flex-end;gap:48px}
+.dhd h1{font:400 56px/1 'Newsreader',serif;color:#0E3A40;white-space:nowrap}
+.dhd p{font-size:16px;line-height:1.55;color:#3B4A4C;max-width:60em;text-wrap:pretty}
+.dhd a{font-weight:600}
+.row{position:absolute;left:0;display:flex;gap:40px}
+.cell figcaption{font-size:14px;color:#3B4A4C;margin-bottom:12px;display:flex;gap:8px}
+.cell figcaption b{color:#0E3A40}
+</style>
+</head>
+<body>
+<section class="dhd" data-screen-label="Header"><h1>KinHolo v2</h1><p>Design C, 22 screens. Teal 900 title bands with the household photo behind them, white sheets, a call sheet Home, and Newsreader with Hanken Grotesk throughout. The menu at the top left opens every module. Rules and tokens are in <a href="style-guide.html">the style guide</a>.</p></section>
+<div class="row" id="rowC1" style="top:130px"></div>
+<div class="row" id="rowC2" style="top:990px"></div>
+<div class="row" id="rowC3" style="top:1850px"></div>
+<script src="src/image-slot.js"></script>
+<script src="src/common.js"></script>
+<script src="src/layouts-daylight.js"></script>
+<script src="src/layouts-titlecard.js"></script>
+<script src="src/screens-c.js"></script>
+<template id="__bundler_thumbnail"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" fill="#0E3A40"/><g transform="translate(18 31) scale(.2)" fill="none" stroke-linecap="round" stroke-width="36"><circle cx="125" cy="124" r="106" stroke="#fff"/><path d="M233.5 27L233.5 220" stroke="#7FA8D0"/><path d="M242 105L307 32" stroke="#E2683C"/><path d="M234 124L307 220" stroke="#2E8C5A"/></g></svg></template>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KinHolo v2 · Style guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens/tokens.css">
+<link rel="stylesheet" href="src/kinholo.css">
+<style>
+body{margin:0;background:#fff;color:var(--kh-ink);font-family:var(--kh-font-text);font-size:15px;line-height:1.55}
+a{color:var(--kh-teal-700)}a:hover{color:var(--kh-teal-900)}
+.sg-wrap{max-width:1040px;margin:0 auto;padding:0 28px 96px}
+.sg-top{background:var(--kh-teal-900);color:#fff}
+.sg-top .sg-wrap{padding-top:56px;padding-bottom:56px;display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.sg-top h1{font:400 52px/1 var(--kh-font-display);letter-spacing:-.015em;margin:0}
+.sg-top p{margin:10px 0 0;color:var(--kh-band-sub);max-width:36em}
+.sg h2{font:400 32px/1.1 var(--kh-font-display);color:var(--kh-teal-900);margin:64px 0 6px}
+.sg h2+p{color:var(--kh-slate);margin:0 0 24px;max-width:44em;text-wrap:pretty}
+.sg h3{font-size:14px;font-weight:600;margin:28px 0 10px}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.sw div{border:1px solid var(--kh-border-card);border-radius:16px;overflow:hidden}
+.sw i{display:block;height:72px}
+.sw b{display:block;font-size:13.5px;font-weight:600;padding:10px 12px 0}
+.sw span{display:block;font-size:12.5px;color:var(--kh-muted);padding:0 12px 10px;font-variant-numeric:tabular-nums}
+.ty{display:flex;flex-direction:column;border-top:1px solid var(--kh-divider)}
+.ty>div{display:grid;grid-template-columns:180px minmax(0,1fr);gap:20px;padding:16px 0;border-bottom:1px solid var(--kh-divider);align-items:baseline}
+.ty small{font-size:12.5px;color:var(--kh-muted)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.box{border:1px solid var(--kh-border-card);border-radius:18px;padding:20px}
+.box.dk{background:var(--kh-teal-900);border-color:var(--kh-teal-900)}
+.demo{display:flex;flex-direction:column;gap:10px}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px 32px;margin:0;padding:0;list-style:none}
+.rules li{padding:10px 0;border-bottom:1px solid var(--kh-divider);text-wrap:pretty}
+.rules b{display:block;font-weight:600}
+.logo{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.lg-tile{display:flex;align-items:center;justify-content:center;width:200px;height:140px;border-radius:18px;border:1px solid var(--kh-border-card)}
+.lg-tile.dk{background:var(--kh-teal-900);border-color:var(--kh-teal-900)}
+.band-demo{width:360px;max-width:100%;border-radius:22px;overflow:hidden;border:1px solid var(--kh-border-card)}
+.foot{margin-top:72px;color:var(--kh-muted);font-size:13.5px}
+</style>
+</head>
+<body>
+<header class="sg-top"><div class="sg-wrap"><span id="logo-hero"></span><div><h1>KinHolo v2 style guide</h1><p>Design C, Daylight title card. The visual summary. Full rules are in STYLE-GUIDE.md and the values in tokens/tokens.json.</p></div></div></header>
+<main class="sg-wrap sg">
+<h2>Principles</h2><p>Five rules every screen follows.</p>
+<ul class="rules"><li><b>Calm first</b>One clear thing to do per screen. Colour is spent on meaning.</li><li><b>Show the household</b>Lead with what is happening at home today, not with features.</li><li><b>Cinematic through framing</b>Teal title bands and the household photo. No glows, blurs or gradient buttons.</li><li><b>White is the working surface</b>Content sits on white sheets. Teal is for headers and primary actions.</li><li><b>Plain words</b>Sentence case, short sentences, no em dashes, no exclamation marks.</li></ul>
+
+<h2>Colour</h2><p>KinHolo colours only. Coral never sits behind text, and small coral words use the darker text shade.</p>
+<h3>Teal</h3><div class="sw" id="sw-teal"></div>
+<h3>Spectrum</h3><div class="sw" id="sw-spec"></div>
+<h3>Neutrals</h3><div class="sw" id="sw-neu"></div>
+
+<h2>Type</h2><p>Newsreader for display and numbers, Hanken Grotesk for everything else. Hierarchy comes from size and family, not colour.</p>
+<div class="ty">
+<div><small>Display · Newsreader 33</small><span style="font:400 33px/1.05 var(--kh-font-display);letter-spacing:-.015em;color:var(--kh-teal-900)">Evening, Adaeze</span></div>
+<div><small>Title · Newsreader 26</small><span style="font:400 26px/1.15 var(--kh-font-display);color:var(--kh-teal-900)">Basmati rice, 5 kg</span></div>
+<div><small>Section · Newsreader 25</small><span style="font:400 25px/1.15 var(--kh-font-display);color:var(--kh-teal-900)">It’s just you for now.</span></div>
+<div><small>Number XL · Newsreader 62</small><span style="font:400 62px/1 var(--kh-font-display);color:var(--kh-teal-900);font-variant-numeric:lining-nums tabular-nums">€23.40</span></div>
+<div><small>Body · Hanken 15</small><span>Shared lists, tasks and monthly budget. With a separate login for everyone in the household.</span></div>
+<div><small>Row · Hanken 500 15.5</small><span style="font-size:15.5px;font-weight:500">Put the bins out</span></div>
+<div><small>Small · Hanken 13.5</small><span style="font-size:13.5px;color:var(--kh-muted)">Tom, every Friday</span></div>
+<div><small>Caption · Hanken 600 13</small><span style="font-size:13px;font-weight:600;color:var(--kh-teal-700)">Fruit and veg</span></div>
+</div>
+
+<h2>Logo</h2><p>The OK Spectrum mark from the live app. Wordmark in Newsreader. The first screen adds the tagline in Newsreader italic.</p>
+<div class="logo"><div class="lg-tile" id="lg-light"></div><div class="lg-tile dk" id="lg-dark"></div><div class="lg-tile" style="flex-direction:column;gap:8px" id="lg-lock"></div></div>
+
+<h2>Title band</h2><p>Teal 900 with the household photo behind it under a scrim. Plain teal when there is no photo. Menu at the top left, camera icon at the bottom right on Home for a new household.</p>
+<div class="grid2"><div class="band-demo vb vc"><header class="band"><div class="bt"><div><p class="k" id="bd-k">Thursday 30 October</p><h1 class="T">Welcome, Adaeze</h1></div><span id="bd-av"></span></div><p class="bs">The Okafor-Brandt house</p><a class="phedit" id="bd-cam" aria-label="Add a household photo"></a></header><div class="sheet-top p" style="padding-bottom:20px"><p class="sm">White sheet overlaps the band by 24 with a 26 radius.</p></div></div>
+<div class="band-demo vb vc hasph"><header class="band" style="padding-top:22px;background-image:url('https://images.unsplash.com/photo-1548289161-f1088e9f559f?w=900&amp;q=70&amp;auto=format&amp;fit=crop')"><div class="bt"><div><p class="k">Thursday 30 October</p><h1 class="T">Evening, Adaeze</h1></div></div><p class="bs">Two things tonight. €316 left this month.</p></header><div class="sheet-top p" style="padding-bottom:20px"><p class="sm">With a household photo. Photo by Derek Owens on Unsplash.</p></div></div></div>
+
+<h2>Components</h2><p>The core set. Specs and states are in STYLE-GUIDE.md section 6.</p>
+<div class="grid2">
+<div class="box vb vc"><h3 style="margin-top:0">Buttons</h3><div class="demo"><button class="btn b1">Create a household</button><button class="btn b2">I have an invite code</button></div></div>
+<div class="box vb vc"><h3 style="margin-top:0">Message card</h3><div id="msg"></div></div>
+<div class="box vb vc"><h3 style="margin-top:0">Call sheet</h3><ul class="cs" id="cs"></ul></div>
+<div class="box vb vc"><h3 style="margin-top:0">Choices</h3><div class="seg"><span class="on">Everyone</span><span>Mine</span><span>Done</span></div><div class="chips" style="margin-top:14px"><span class="on">Groceries</span><span>Eating out</span><span>School</span></div></div>
+<div class="box vb vc"><h3 style="margin-top:0">List card</h3><ul class="lcards" id="lc"></ul></div>
+<div class="box vb vc"><h3 style="margin-top:0">Item rows</h3><ul class="its" id="its"></ul></div>
+</div>
+
+<h2>Copy</h2><p>How KinHolo talks.</p>
+<ul class="rules"><li><b>Say it like the household would</b>"Tom can’t find basmati rice", "€316 left", "Nobody yet".</li><li><b>No em dashes</b>Use a full stop, a comma or "and". No middle dots in sentences either.</li><li><b>Sentence case</b>Headings and buttons included. No capitals for emphasis.</li><li><b>Plain money words</b>"On track to go €40 over", never "pacing".</li><li><b>Privacy as reassurance</b>"Only adults can see money", not warnings.</li><li><b>Names over roles</b>"Ask Tom", not "Ask the other adult".</li></ul>
+
+<p class="foot">KinHolo v2 design · Design C · tokens in tokens/tokens.json · screens in index.html</p>
+</main>
+<script src="src/common.js"></script>
+<script>
+(function(){var K=KH2,ic=K.ic,av=K.av;
+function sw(id,list){document.getElementById(id).innerHTML=list.map(function(c){return '<div><i style="background:'+c[1]+(c[1]==='#FFFFFF'?';box-shadow:inset 0 -1px 0 #EAF0F0':'')+'"></i><b>'+c[0]+'</b><span>'+c[1]+'</span></div>';}).join('');}
+sw('sw-teal',[['Teal 900','#0E3A40'],['Teal 800','#14525B'],['Teal 700','#1C6E78'],['Teal 500','#2A8C99'],['Teal 300','#74B7C0'],['Teal 100','#E4F0F1']]);
+sw('sw-spec',[['Coral','#E2683C'],['Coral text','#B9502A'],['Cornflower','#2E5A87'],['Cornflower light','#7FA8D0'],['Green','#2E8C5A'],['Green text','#2E7550']]);
+sw('sw-neu',[['Ink','#1E2A2D'],['Ink 2','#3B4A4C'],['Slate','#586A6D'],['Muted','#5F7173'],['Control border','#CFDCDD'],['Card border','#E3EAEB'],['Divider','#EAF0F0'],['Soft surface','#F3F7F7'],['White','#FFFFFF']]);
+document.getElementById('logo-hero').innerHTML=K.mark(70,1);
+document.getElementById('lg-light').innerHTML=K.mark(72);
+document.getElementById('lg-dark').innerHTML=K.mark(72,1);
+document.getElementById('lg-lock').innerHTML=K.mark(44)+'<span style="font:400 24px var(--kh-font-display);color:#0E3A40">KinHolo</span><span style="font:italic 400 14px var(--kh-font-display);color:#586A6D">Everything for your Kin</span>';
+document.getElementById('bd-k').insertAdjacentHTML('afterbegin','<span class="mbtn" aria-label="Open menu">'+ic('menu',24,1.9)+'</span>');
+document.getElementById('bd-av').innerHTML=av('a',40);
+document.getElementById('bd-cam').innerHTML=ic('cam',18);
+document.getElementById('msg').innerHTML='<div class="msg"><div class="mh">'+av('t',30)+'<span><b>Tom</b> at Rewe</span><small>2 min ago</small></div><p>Basmati rice is sold out. Is jasmine rice OK instead?</p><div class="ma"><button class="btn mb1">Yes, get jasmine</button><button class="btn mb2">See options</button></div></div>';
+document.getElementById('cs').innerHTML='<li class="nowrow"><span class="t">18:42</span><span class="nm"><span class="now">Now</span></span></li><li><span class="t">19:00</span><span class="nm">Maths homework with Ife<small>Adaeze</small></span>'+av('i',28)+'</li><li><span class="t">20:30</span><span class="nm">Put the bins out<small>Tom</small></span>'+av('t',28)+'</li>';
+document.getElementById('lc').innerHTML='<li><span class="nm">Saturday shop<small><span class="live">Tom is shopping now</span></small></span><b class="fr">7<i>/11</i></b><span class="bar"><i style="width:64%"></i></span></li>';
+document.getElementById('its').innerHTML='<li class="itm done"><span class="ck">'+ic('check',14,2.6)+'</span><span class="nm">Milk, 2 litres<small>Tom</small></span></li><li class="itm"><span class="ck"></span><span class="nm">Basmati rice, 5 kg<small>Adaeze</small></span><span class="oos">Out of stock</span></li><li class="itm"><span class="ck"></span><span class="nm">Fix the bathroom light<small>Added by Tom</small></span><a class="take">Take it</a></li>';
+})();
+</script>
+</body>
+</html>
